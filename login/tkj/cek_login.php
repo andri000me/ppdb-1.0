@@ -3,7 +3,7 @@
 session_start();
 
 // menghubungkan dengan koneksi
-include '../koneksi.php';
+include '../../koneksi.php';
 
 // menangkap data yang dikirim dari form
 // belum mengunakan MD5
@@ -12,7 +12,7 @@ $nisn = addslashes(trim($_POST['nisn']));
 $nik = ($_POST['nik']);
 
 // menyeleksi data admin dengan nisn dan nik yang sesuai
-$data = mysqli_query($koneksi, "select * from f_siswa_tkj where nisn='$nisn' and nik='$nik'");
+$data = mysqli_query($koneksi, "select nisn,nik from f_siswa_tkj where nisn='$nisn' and nik='$nik'");
 
 $cek_id = mysqli_query($koneksi, "SELECT id FROM f_siswa_tkj");
 while ($row = mysqli_fetch_array($cek_id)) {
@@ -30,9 +30,9 @@ if ($cek > 0) {
 
     if ($login['nisn']=="$nisn") {
         $_SESSION['username'] = $nik;
-        $_SESSION['nisn'] = "nisn";
+        $_SESSION['id'] = "$dapat_id";
         echo "cek";
-        header("location:../siswa/tkj/edit-siswa.php?id=$dapat_id");
+        header("location:../../siswa/tkj/edit-siswa.php?id=$dapat_id");
         // header("location:siswa/index.php");
     } elseif ($login['level']=="operator") {
         $_SESSION['nisn'] = $nisn;

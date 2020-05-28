@@ -1,7 +1,7 @@
 <br><br><br>
 <table>
   <tr>
-    <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="../../login/tkj_logout.php">Keluar</a></td>
+    <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="../../login/tkj/logout.php">Keluar</a></td>
     </td>
     <td>
       <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak-tkj.php?id=<?php echo $d['id']; ?>">Cetak PDF</a>
