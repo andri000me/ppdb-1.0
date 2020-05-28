@@ -1,8 +1,18 @@
 <?php
 session_start();
-if ($_SESSION['status']!="admin") {
+
+include '../../koneksi.php';
+$id = $_GET['id'];
+
+$cek_id = mysqli_query($koneksi, "SELECT id FROM f_siswa_rpl where id='$id'");
+while ($row = mysqli_fetch_array($cek_id)) {
+    $dapat_id = $row['id'];
+}
+
+if ($_SESSION['id']!="$dapat_id") {
     header("location:../../index.php?pesan=belum_login");
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

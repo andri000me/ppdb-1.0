@@ -3,7 +3,7 @@
 session_start();
 
 // menghubungkan dengan koneksi
-include '../koneksi.php';
+include '../../koneksi.php';
 
 // menangkap data yang dikirim dari form
 // belum mengunakan MD5
@@ -12,7 +12,7 @@ $nisn = addslashes(trim($_POST['nisn']));
 $nik = ($_POST['nik']);
 
 // menyeleksi data admin dengan nisn dan nik yang sesuai
-$data = mysqli_query($koneksi, "select * from f_siswa_rpl where nisn='$nisn' and nik='$nik'");
+$data = mysqli_query($koneksi, "select nisn,nik from f_siswa_rpl where nisn='$nisn' and nik='$nik'");
 
 $cek_id = mysqli_query($koneksi, "SELECT id FROM f_siswa_rpl");
 while ($row = mysqli_fetch_array($cek_id)) {
@@ -31,7 +31,7 @@ if ($cek > 0) {
     if ($login['nisn']=="$nisn") {
         $_SESSION['username'] = $nik;
         $_SESSION['id'] = "$dapat_id";
-        echo "cek";
+        // echo "cek";
         header("location:../../siswa/rpl/edit-siswa.php?id=$dapat_id");
         // header("location:siswa/index.php");
     } elseif ($login['level']=="operator") {
@@ -39,11 +39,11 @@ if ($cek > 0) {
         $_SESSION['status'] = "login";
         header("location:d/index.php");
     } else {
-        echo "gagal1";
+        // echo "gagal1";
         // header("location:index.php?pesan=gagal1");
     }
 } else {
-    echo "gagal2";
+    // echo "gagal2";
 
     // header("location:index.php?pesan=gagal");
 }
