@@ -31,7 +31,7 @@ if ($cek > 0) {
     if ($login['nisn']=="$nisn") {
         $_SESSION['username'] = $nik;
         $_SESSION['id'] = "$dapat_id";
-        echo "cek";
+        // echo "cek";
         header("location:../../siswa/tkj/edit-siswa.php?id=$dapat_id");
         // header("location:siswa/index.php");
     } elseif ($login['level']=="operator") {
@@ -39,11 +39,11 @@ if ($cek > 0) {
         $_SESSION['status'] = "login";
         header("location:d/index.php");
     } else {
-        echo "gagal1";
+        // echo "gagal1";
         // header("location:index.php?pesan=gagal1");
     }
 } else {
-    echo "gagal2";
+    // echo "gagal2";
 
     // header("location:index.php?pesan=gagal");
 }
