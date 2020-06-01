@@ -46,7 +46,7 @@
                 ?>
 
           <h4 style="margin-top:  40px;">Seleksi Administrasi PPDB</h5>
-          <h4 style="margin-bottom: 40px;">Komptensi Keahlian Rekayasa Perangkat Lunak</h5>
+          <h4 style="margin-bottom: 40px;">Komptensi Keahlian Akuntansi Keuangan Lembaga</h5>
 
       </div>
 

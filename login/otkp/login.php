@@ -46,7 +46,7 @@
                 ?>
 
           <h4 style="margin-top:  40px;">Seleksi Administrasi PPDB</h5>
-          <h4 style="margin-bottom: 40px;">Komptensi Keahlian Teknik Komputer Jaringan</h5>
+          <h4 style="margin-bottom: 40px;">Komptensi Keahlian Otomatisasi Tata Kelola Perkantoran</h5>
 
       </div>
 
