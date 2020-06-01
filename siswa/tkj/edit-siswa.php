@@ -12,12 +12,13 @@ if ($_SESSION['status']!="siswa") {
   <title>PPDB SMKN 1 Kragilan</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <script src="../../js/bootstrap.min.js"></script>
 
 
-  <!-- <link href="../0-datepicker/libraries/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+  <link href="../0-datepicker/libraries/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -166,10 +167,11 @@ if ($_SESSION['status']!="siswa") {
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Tanggal Diterbitkan KK :</label>
       <div class="col-sm-3">
-        <input type="text" name="tgl_kk" class="form-control datepicker" required/>
+        <input type="text" name="tgl_kk" class="form-control datepicker" />
       </div>
-      (Bulan/Tanggal/Tahun)
+      (Tanggal/Bulan/Tahun)
     </div>
+
 
     <br><h4>D. DATA ALAMAT TEMPAT TINGGAL SESUAI KK CALON PESERTA DIDIK</h4>
     <div class="form-group">
@@ -416,8 +418,8 @@ if ($_SESSION['status']!="siswa") {
 </div>
 
 <?php  ?>
-    <script src="../../../siswa/0-datepicker/libraries/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
-    <script src="../../../siswa/0-datepicker/js/custom.js"></script>
+    <script src="../0-datepicker/libraries/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="../0-datepicker/js/custom.js"></script>
 
     <script>
     $(document).ready(function(){

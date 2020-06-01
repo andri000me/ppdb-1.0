@@ -278,6 +278,47 @@ $buta_warna = $_POST['buta_warna'];
 $kompetensi_keahlian_2 = $_POST['kompetensi_keahlian_2'];
 
 
+
+//username dan password
+function pass_acak($panjang)
+{
+    $karakter= 'abcdefghijklmnopqrstuvwxyz';
+    $string = '';
+    for ($i = 0; $i < $panjang; $i++) {
+        $pos = rand(0, strlen($karakter)-1);
+        $string .= $karakter{$pos};
+    }
+    return $string;
+}
+
+function user_acak($panjang)
+{
+    $karakter= '123456789';
+    $string = '';
+    for ($i = 0; $i < $panjang; $i++) {
+        $pos = rand(0, strlen($karakter)-1);
+        $string .= $karakter{$pos};
+    }
+    return $string;
+}
+
+//cara memanggilnya
+$username = user_acak(7);
+$password = pass_acak(5);
+
+//akhir pembuatan password
+
+//awal Enkripsi
+$A = $nama_siswa;
+$B = $tgl_lahir;
+$C = $A.$B;
+
+$enk = md5($C);
+
+
+// akhir enkripsi
+
+
 // UPDATE `upload` SET `id_file`=[value-1],`nama_file`=[value-2] WHERE 1
 
 mysqli_query($koneksi, "UPDATE f_siswa_tkj SET
@@ -320,6 +361,9 @@ mysqli_query($koneksi, "UPDATE f_siswa_tkj SET
              un_bing='$un_bing',
              un_mtk='$un_mtk',
              un_ipa='$un_ipa',
+             username='$nik',
+             password='$password',
+             enk='$enk',
              bertindik='$bertindik',
              perokok='$perokok',
              psikotropika='$psikotropika',
