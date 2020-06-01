@@ -201,7 +201,7 @@ if ($_SESSION['id']!="$dapat_id") {
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Kode POS :</label>
       <div class="col-sm-6">
-        <input type="number" class="form-control"   placeholder="Kode POS" name="kode_pos" value="<?php echo $d['kode_pos']; ?>" required>
+        <input type="number" class="form-control"   placeholder="Kode POS" name="kode_pos" value="" required>
       </div>
     </div>
     <div class="form-group">
@@ -213,13 +213,13 @@ if ($_SESSION['id']!="$dapat_id") {
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">RT :</label>
       <div class="col-sm-6">
-        <input type="number" class="form-control"   placeholder="RT" name="rt" value="<?php echo $d['rt']; ?>" required>
+        <input type="number" class="form-control"   placeholder="RT" name="rt" value="" required>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">RW :</label>
       <div class="col-sm-6">
-        <input type="number" class="form-control"   placeholder="RW" name="rw" value="<?php echo $d['rw']; ?>" required>
+        <input type="number" class="form-control"   placeholder="RW" name="rw" value="" required>
       </div>
     </div>
     <div class="form-group">
