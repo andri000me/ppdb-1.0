@@ -361,7 +361,7 @@ mysqli_query($koneksi, "UPDATE f_siswa_tkj SET
              un_bing='$un_bing',
              un_mtk='$un_mtk',
              un_ipa='$un_ipa',
-             username='$nik',
+             username='$nisn',
              password='$password',
              enk='$enk',
              bertindik='$bertindik',
