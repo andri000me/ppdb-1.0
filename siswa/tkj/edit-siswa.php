@@ -1,15 +1,7 @@
 <?php
+
 session_start();
-
-include '../../koneksi.php';
-$id = $_GET['id'];
-
-$cek_id = mysqli_query($koneksi, "SELECT id FROM f_siswa_tkj where id='$id'");
-while ($row = mysqli_fetch_array($cek_id)) {
-    $dapat_id = $row['id'];
-}
-
-if ($_SESSION['id']!="$dapat_id") {
+if ($_SESSION['status']!="siswa") {
     header("location:../../index.php?pesan=belum_login");
 }
 
@@ -65,12 +57,12 @@ if ($_SESSION['id']!="$dapat_id") {
 
     <?php
       include '../../koneksi.php';
-      $id = $_GET['id'];
-      $data = mysqli_query($koneksi, "select * from f_siswa_tkj where id='$id'");
+      $nik = $_GET['nik'];
+      $data = mysqli_query($koneksi, "select * from f_siswa_tkj where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           $cek_npsn = $d['npsn_sekolah'];
           if (!empty($cek_npsn)) {
-              header("location:tkj-lihat.php?id=$id");
+              header("location:tkj-lihat.php?nik=$nik");
           } ?>
 
     <div class="form-group">
@@ -225,7 +217,7 @@ if ($_SESSION['id']!="$dapat_id") {
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Jarak Alamat Siswa ke Sekolah :</label><b>Meter</b>
       <div class="col-sm-4">
-        <input type="number" class="form-control"   placeholder="Jarak Rumah ke Sekolah" name="jarak_kesekolah" value="<?php echo $d['jarak_kesekolah']; ?>" required>
+        <input type="number" class="form-control"   placeholder="Jarak Rumah ke Sekolah" name="jarak_kesekolah" value="" required>
       </div>
     </div>
 

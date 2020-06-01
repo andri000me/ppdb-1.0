@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['nisn']!="nisn") {
+if ($_SESSION['status']!="siswa") {
     header("location:../index.php?pesan=belum_login");
 }
 ?>
@@ -36,7 +36,7 @@ if ($_SESSION['nisn']!="nisn") {
   <table class="table table-bordered">
     <?php
       include '../../koneksi.php';
-      $id = $_GET['id'];
+      $nik = $_GET['nik'];
       $data = mysqli_query($koneksi, "select
 
       id,
@@ -93,7 +93,7 @@ if ($_SESSION['nisn']!="nisn") {
       laptop,
       kompetensi_keahlian_2
 
-       from f_siswa_tkj where id='$id'");
+       from f_siswa_tkj where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           include('tkj-tampil.php'); ?>
 
