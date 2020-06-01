@@ -233,19 +233,19 @@ if ($_SESSION['id']!="$dapat_id") {
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Nama Orang Tua/Wali :</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control"   placeholder="Nama Orang Tua" name="nama_org_tua" value="<?php echo $d['nama_org_tua']; ?>" required>
+        <input type="text" class="form-control"   placeholder="Nama Orang Tua" name="nama_org_tua" value="" required>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Pekerjaan Orang Tua/Wali :</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control"   placeholder="Pekerjaan Orang Tua" name="pekerjaan_org_tua" value="<?php echo $d['pekerjaan_org_tua']; ?>" readonly>
+        <input type="text" class="form-control"   placeholder="Pekerjaan Orang Tua" name="pekerjaan_org_tua" value="" required>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">PKH/KKS/KIP/Jamsosda<br>(Diisi jika memiliki) :</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control"   placeholder="PKH/KKS/KIP/Jamsosda" name="kip" value="<?php echo $d['kip']; ?>" readonly>
+        <input type="text" class="form-control"   placeholder="PKH/KKS/KIP/Jamsosda" name="kip" value="">
       </div>
     </div><br>
 
@@ -317,25 +317,25 @@ if ($_SESSION['id']!="$dapat_id") {
     <div class="form-group">
       <label class="control-label col-sm-2" >Nilai Bahasa Indonesia </label>
       <div class="col-sm-3">
-        <input type="number" class="form-control"   placeholder="Nilai Bahasa Indonesia" name="un_bind" value="<?php echo $d['un_bind']; ?>" required>
+        <input type="number" class="form-control"   placeholder="Nilai Bahasa Indonesia" name="un_bind" value="" required>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Nilai Bahasa Inggris </label>
       <div class="col-sm-3">
-        <input type="number" class="form-control"   placeholder="Nilai Bahasa Inggris" name="un_bing" value="<?php echo $d['un_bing']; ?>" required>
+        <input type="number" class="form-control"   placeholder="Nilai Bahasa Inggris" name="un_bing" value="" required>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Nilai Matematika </label>
       <div class="col-sm-3">
-        <input type="number" class="form-control"   placeholder="Nilai Matematika" name="un_mtk" value="<?php echo $d['un_mtk']; ?>" required>
+        <input type="number" class="form-control"   placeholder="Nilai Matematika" name="un_mtk" value="" required>
       </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2">Nilai IPA </label>
       <div class="col-sm-3">
-        <input type="number" class="form-control"   placeholder="Nilai IPA" name="un_ipa" value="<?php echo $d['un_ipa']; ?>" required>
+        <input type="number" class="form-control"   placeholder="Nilai IPA" name="un_ipa" value="" required>
       </div>
     </div>
     <br><h4>H. KONDISI FISIK DAN KEBIASAAN</h4>
@@ -343,7 +343,7 @@ if ($_SESSION['id']!="$dapat_id") {
         <label class="control-label col-sm-2" >Apakah anda bertindik (bagi laki-laki) </label>
         <div class="col-sm-2">
           <select name="bertindik" class="form-control" required>
-                <option value="<?php echo $d['bertindik']; ?>"> <?php echo $d['bertindik']; ?> </option>
+            <option value="">Pilihan Anda</option>
                 <option value="Ya">Ya</option>
                 <option value="Tidak">Tidak</option>
                 <option value="Perempuan">Saya Perempuan</option>
@@ -354,7 +354,7 @@ if ($_SESSION['id']!="$dapat_id") {
         <label class="control-label col-sm-2" >Apakah anda Perokok </label>
         <div class="col-sm-2">
           <select name="perokok" class="form-control" value="<?php echo $d['perokok']; ?>" required>
-            <option value="<?php echo $d['perokok']; ?>"> <?php echo $d['perokok']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -364,7 +364,7 @@ if ($_SESSION['id']!="$dapat_id") {
         <label class="control-label col-sm-2" >Apakah anda pemakai Psikotropika<br>(Narkoba, Ganja dan sejenisnya) </label>
         <div class="col-sm-2">
           <select name="psikotropika" class="form-control" required>
-            <option value="<?php echo $d['psikotropika']; ?>" > <?php echo $d['psikotropika']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -374,7 +374,7 @@ if ($_SESSION['id']!="$dapat_id") {
      <label class="control-label col-sm-2" >Apakah anda bertato </label>
      <div class="col-sm-2">
        <select name="bertato" class="form-control" required>
-         <option value='<?php echo $d['bertato']; ?>'> <?php echo $d['bertato']; ?> </option>
+         <option value="">Pilihan Anda</option>
              <option value="Ya">Ya</option>
              <option value="Tidak">Tidak</option>
          </select>
@@ -384,7 +384,7 @@ if ($_SESSION['id']!="$dapat_id") {
      <label class="control-label col-sm-2" >Apakah anda peminum-minuman keras </label>
      <div class="col-sm-2">
        <select name="peminum" class="form-control" required>
-         <option value="<?php echo $d['peminum']; ?>" > <?php echo $d['peminum']; ?> </option>
+         <option value="">Pilihan Anda</option>
              <option value="Ya">Ya</option>
              <option value="Tidak">Tidak</option>
          </select>
@@ -394,7 +394,7 @@ if ($_SESSION['id']!="$dapat_id") {
      <label class="control-label col-sm-2" >Apakah anda Buta Warna </label>
      <div class="col-sm-2">
        <select name="buta_warna" class="form-control" required>
-         <option value="<?php echo $d['buta_warna']; ?>" > <?php echo $d['buta_warna']; ?> </option>
+         <option value="">Pilihan Anda</option>
              <option value="Ya">Ya</option>
              <option value="Tidak">Tidak</option>
          </select>
@@ -405,7 +405,7 @@ if ($_SESSION['id']!="$dapat_id") {
      <label class="control-label col-sm-2" >Kesanggupan mempunyai laptop pribadi </label>
      <div class="col-sm-2">
        <select name="laptop" class="form-control" required>
-         <option value="<?php echo $d['laptop']; ?>" > <?php echo $d['laptop']; ?> </option>
+         <option value="">Pilihan Anda</option>
              <option value="Ya">Ya</option>
              <option value="Tidak">Tidak</option>
          </select>
