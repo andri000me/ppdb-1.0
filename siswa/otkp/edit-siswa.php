@@ -38,7 +38,7 @@ if ($_SESSION['status']!="siswa") {
           <h5><b>Tahun Pelajaran 2020/2021</b></h4>
         </center>
         <center>
-          <h4><b>Program Studi Teknik Komputer Jaringan</b></h4>
+          <h4><b>Program Studi Otomatisasi Tata Kelola Perkantoran</b></h4>
         </center><br>
         <!-- font ganti jenis -->
       </div>
