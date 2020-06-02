@@ -223,13 +223,13 @@ if ($_SESSION['status']!="siswa") {
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Pekerjaan Orang Tua/Wali :</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" placeholder="Pekerjaan Orang Tua" name="pekerjaan_org_tua" value="<?php echo $d['pekerjaan_org_tua']; ?>" readonly>
+          <input type="text" class="form-control" placeholder="Pekerjaan Orang Tua" name="pekerjaan_org_tua" value="<?php echo $d['pekerjaan_org_tua']; ?>" required>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">PKH/KKS/KIP/Jamsosda<br>(Diisi jika memiliki) :</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" placeholder="PKH/KKS/KIP/Jamsosda" name="kip" value="<?php echo $d['kip']; ?>" readonly>
+          <input type="text" class="form-control" placeholder="PKH/KKS/KIP/Jamsosda" name="kip" value="<?php echo $d['kip']; ?>" required>
         </div>
       </div><br>
 
@@ -329,7 +329,7 @@ if ($_SESSION['status']!="siswa") {
         <label class="control-label col-sm-2">Apakah anda bertindik (bagi laki-laki) </label>
         <div class="col-sm-2">
           <select name="bertindik" class="form-control" required>
-            <option value="<?php echo $d['bertindik']; ?>"> <?php echo $d['bertindik']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
             <option value="Perempuan">Saya Perempuan</option>
@@ -339,8 +339,8 @@ if ($_SESSION['status']!="siswa") {
       <div class="form-group">
         <label class="control-label col-sm-2">Apakah anda Perokok </label>
         <div class="col-sm-2">
-          <select name="perokok" class="form-control" value="<?php echo $d['perokok']; ?>" required>
-            <option value="<?php echo $d['perokok']; ?>"> <?php echo $d['perokok']; ?> </option>
+          <select name="perokok" class="form-control" required>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -350,7 +350,7 @@ if ($_SESSION['status']!="siswa") {
         <label class="control-label col-sm-2">Apakah anda pemakai Psikotropika<br>(Narkoba, Ganja dan sejenisnya) </label>
         <div class="col-sm-2">
           <select name="psikotropika" class="form-control" required>
-            <option value="<?php echo $d['psikotropika']; ?>"> <?php echo $d['psikotropika']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -360,7 +360,7 @@ if ($_SESSION['status']!="siswa") {
         <label class="control-label col-sm-2">Apakah anda bertato </label>
         <div class="col-sm-2">
           <select name="bertato" class="form-control" required>
-            <option value='<?php echo $d['bertato']; ?>'> <?php echo $d['bertato']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -370,7 +370,7 @@ if ($_SESSION['status']!="siswa") {
         <label class="control-label col-sm-2">Apakah anda peminum-minuman keras </label>
         <div class="col-sm-2">
           <select name="peminum" class="form-control" required>
-            <option value="<?php echo $d['peminum']; ?>"> <?php echo $d['peminum']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -380,7 +380,7 @@ if ($_SESSION['status']!="siswa") {
         <label class="control-label col-sm-2">Apakah anda Buta Warna </label>
         <div class="col-sm-2">
           <select name="buta_warna" class="form-control" required>
-            <option value="<?php echo $d['buta_warna']; ?>"> <?php echo $d['buta_warna']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -392,7 +392,7 @@ if ($_SESSION['status']!="siswa") {
         <label class="control-label col-sm-2">Kesanggupan mempunyai laptop pribadi </label>
         <div class="col-sm-2">
           <select name="laptop" class="form-control" required>
-            <option value="<?php echo $d['laptop']; ?>"> <?php echo $d['laptop']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
