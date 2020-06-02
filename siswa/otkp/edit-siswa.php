@@ -97,7 +97,7 @@ if ($_SESSION['status']!="siswa") {
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">NPSN Sekolah Asal :</label>
       <div class="col-sm-6">
-        <input type="number" class="form-control"   placeholder="NPSN Sekolah Asal" name="npsn_sekolah" value="<?php echo $d['npsn_sekolah']; ?>" readonly>
+        <input type="number" class="form-control"   placeholder="NPSN Sekolah Asal" name="npsn_sekolah" value="<?php echo $d['npsn_sekolah']; ?>" >
       </div>
     </div>
 
@@ -140,6 +140,12 @@ if ($_SESSION['status']!="siswa") {
         <input type="number" class="form-control" placeholder="Tahun lulus" name="tahun_lulus" value="<?php echo $d['tahun_lulus']; ?>" readonly>
       </div>
     </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Nomor WhatsApp :</label>
+      <div class="col-sm-3">
+        <input type="number" class="form-control" name="no_hp" placeholder="Nomor WhatsApp" required>
+      </div>
+    </div>
 
     <br><h4>C. KEPENDUDUKAN CALON PESERTA DIDIK</h4>
     <div class="form-group">
@@ -161,12 +167,7 @@ if ($_SESSION['status']!="siswa") {
       </div>
       (Bulan/Tanggal/Tahun)
     </div>
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Nomor WhatsApp :</label>
-      <div class="col-sm-3">
-        <input type="number" class="form-control" name="no_hp" placeholder="Nomor WhatsApp" required>
-      </div>
-    </div>
+
 
 
     <br><h4>D. DATA ALAMAT TEMPAT TINGGAL SESUAI KK CALON PESERTA DIDIK</h4>
@@ -239,7 +240,71 @@ if ($_SESSION['status']!="siswa") {
       </div>
     </div>
 
-    <br><h4>F. INPUT NILAI UJIAN NASIONAL PESERTA DIDIK</h4>
+    <h4>F. INPUT SCAN BERKAS CALON PESERTA DIDIK</h4>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">SKHUN atau Surat Keterangan Lulus</label>
+      <div class="col-sm-6">
+        <input type="file" name="pdf_skhun" accept="application/pdf" class="form-control-file" id="cek_skhu" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Surat Sehat dari Dokter Pemerintah</label>
+      <div class="col-sm-6">
+        <input type="file" name="pdf_surat_dokter" accept="application/pdf" class="form-control-file" id="cek_surat_dokter" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Kartu Keluarga (KK) </label>
+      <div class="col-sm-6">
+        <input type="file" name="pdf_kk" accept="application/pdf" class="form-control-file" id="cek_kk" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Akta Kelahiran </label>
+      <div class="col-sm-6">
+        <input type="file" name="pdf_akta" accept="application/pdf" class="form-control-file" id="cek_akta" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Photo </label>
+      <div class="col-sm-6">
+        <input type="file" name="pdf_photo" accept="application/pdf" class="form-control-file" id="cek_photo" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Swafoto memegang KK Sedang diukur tinggi badan </label>
+      <div class="col-sm-6">
+        <input type="file" name="pdf_swa_kk" accept="application/pdf" class="form-control-file" id="cek_swa_kk" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Piagam 1 </label>
+      <div class="col-sm-6">
+        <input type="file" name="pdf_piagam1" accept="application/pdf" class="form-control-file" id="cek_piagam1">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Piagam 2</label>
+      <div class="col-sm-6">
+        <input type="file" name="pdf_piagam2" accept="application/pdf" class="form-control-file" id="cek_piagam2">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Piagam 3 </label>
+      <div class="col-sm-6">
+        <input type="file" name="pdf_piagam3" accept="application/pdf" class="form-control-file" id="cek_piagam3">
+      </div>
+    </div>
+    <h6><b>Informasi :</h6>
+    <h6>1. File harus dengan format <b>.pdf</b> dengan ukuran maksimal <b>500 kb</b></h6>
+    <h6>2. Dokumen yang di <b>Scan Harus Asli (bukan Photo Copy)</b></h6>
+    <h6>3. Piagam boleh dikosongkan</h6>
+    <h6>4. Piagam hasil perlombaan dan/atau penghargaan di bidang akademik maupun non akademik</h6>
+    <h6>5. Contoh swa photo dapat dilihat di link berikut(belum di kerjakan)</h6>
+    <h6>6. Surat sehat harus ditandatangani oleh dokter pemerintah.</h6>
+
+    <br><h4>G. INPUT NILAI UJIAN NASIONAL PESERTA DIDIK</h4>
     <div class="form-group">
       <label class="control-label col-sm-2" >Nilai Bahasa Indonesia </label>
       <div class="col-sm-3">
