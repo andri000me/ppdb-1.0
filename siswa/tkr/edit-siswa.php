@@ -140,13 +140,13 @@ if ($_SESSION['status']!="siswa") {
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Nama Asal Sekolah :</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" placeholder="Nama Asal Sekolah" name="asal_sekolah" id="asal_sekolah" value="<?php echo $d['asal_sekolah']; ?>">
+          <input type="text" class="form-control" placeholder="Nama Asal Sekolah" name="asal_sekolah" id="asal_sekolah" value="<?php echo $d['asal_sekolah']; ?>" readonly>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">NPSN Sekolah Asal :</label>
         <div class="col-sm-6">
-          <input type="number" class="form-control" placeholder="NPSN Sekolah Asal" name="npsn_sekolah" value="<?php echo $d['npsn_sekolah']; ?>">
+          <input type="number" class="form-control" placeholder="NPSN Sekolah Asal" name="npsn_sekolah" value="<?php echo $d['npsn_sekolah']; ?>" required>
         </div>
       </div>
 
@@ -155,56 +155,61 @@ if ($_SESSION['status']!="siswa") {
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">NISN :</label>
         <div class="col-sm-6">
-          <input type="number" class="form-control" placeholder="NISN" name="nisn" value="<?php echo $d['nisn']; ?>">
+          <input type="number" class="form-control" placeholder="NISN" name="nisn" value="<?php echo $d['nisn']; ?>" readonly>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Nama Calon Peserta Didik :</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" placeholder="Nama" name="nama_siswa" value="<?php echo $d['nama_siswa']; ?>">
+          <input type="text" class="form-control" placeholder="Nama" name="nama_siswa" value="<?php echo $d['nama_siswa']; ?>" readonly>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Jenis Kelamin :</label>
-        <div class="col-sm-2">
-          <select name="jenis_kelamin" class="form-control">
-            <option value="laki-laki">Laki-laki</option>
-            <option value="perempuan">Perempuan</option>
-          </select>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" placeholder="jenis_kelamin" name="jenis_kelamin" value="<?php echo $d['jenis_kelamin']; ?>" readonly>
+
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Tempat Lahir :</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" placeholder="Tempat Lahir" name="tempat_lahir" value="<?php echo $d['tempat_lahir']; ?>">
+          <input type="text" class="form-control" placeholder="Tempat Lahir" name="tempat_lahir" value="<?php echo $d['tempat_lahir']; ?>" readonly>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Tanggal Lahir :</label>
         <div class="col-sm-3">
-          <input type="text" name="tgl_lahir" value="<?php echo $d['tgl_lahir']; ?>" class="form-control datepicker" />
+          <input type="text" name="tgl_lahir" value="<?php echo $d['tgl_lahir']; ?>" class="form-control" readonly />
         </div>
         (Bulan/Tanggal/Tahun)
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Tahun lulus :</label>
         <div class="col-sm-6">
-          <input type="number" class="form-control" placeholder="Tahun lulus" name="tahun_lulus" value="<?php echo $d['tahun_lulus']; ?>">
+          <input type="number" class="form-control" placeholder="Tahun lulus" name="tahun_lulus" value="<?php echo $d['tahun_lulus']; ?>" readonly>
         </div>
       </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Nomor WhatsApp :</label>
+        <div class="col-sm-3">
+          <input type="number" class="form-control" name="no_hp" placeholder="Nomor WhatsApp" required>
+        </div>
+      </div>
+
 
       <br>
       <h4>C. KEPENDUDUKAN CALON PESERTA DIDIK</h4>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">NIK :</label>
         <div class="col-sm-6">
-          <input type="number" class="form-control" placeholder="NIK siswa dari KK" name="nik" value="<?php echo $d['nik']; ?>">
+          <input type="number" class="form-control" placeholder="NIK siswa dari KK" name="nik" value="<?php echo $d['nik']; ?>" readonly>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Nomor Kartu keluarga (KK) :</label>
         <div class="col-sm-6">
-          <input type="number" class="form-control" placeholder="Nomor KK" name="no_kk" value="<?php echo $d['no_kk']; ?>">
+          <input type="number" class="form-control" placeholder="Nomor KK" name="no_kk" value="<?php echo $d['no_kk']; ?>" readonly>
         </div>
       </div>
       <div class="form-group">
@@ -220,49 +225,49 @@ if ($_SESSION['status']!="siswa") {
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Kabupaten/Kota :</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" placeholder="Kabupaten/Kota" name="kota" value="<?php echo $d['kota']; ?>">
+          <input type="text" class="form-control" placeholder="Kabupaten/Kota" name="kota" value="<?php echo $d['kota']; ?>" readonly>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Kecamatan :</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" placeholder="Kecamatan" name="kecamatan" value="<?php echo $d['kecamatan']; ?>">
+          <input type="text" class="form-control" placeholder="Kecamatan" name="kecamatan" value="<?php echo $d['kecamatan']; ?>" readonly>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Kelurahan/Desa :</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" placeholder="Kelurahan/Desa" name="kelurahan" value="<?php echo $d['kelurahan']; ?>">
+          <input type="text" class="form-control" placeholder="Kelurahan/Desa" name="kelurahan" value="<?php echo $d['kelurahan']; ?>" readonly>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Kode POS :</label>
         <div class="col-sm-6">
-          <input type="number" class="form-control" placeholder="Kode POS" name="kode_pos" value="<?php echo $d['kode_pos']; ?>">
+          <input type="number" class="form-control" placeholder="Kode POS" name="kode_pos" value="<?php echo $d['kode_pos']; ?>" required>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Alamat :</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" placeholder="Alamat" name="alamat" value="<?php echo $d['alamat']; ?>">
+          <input type="text" class="form-control" placeholder="Alamat" name="alamat" value="<?php echo $d['alamat']; ?>" readonly>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">RT :</label>
         <div class="col-sm-6">
-          <input type="number" class="form-control" placeholder="RT" name="rt" value="<?php echo $d['rt']; ?>">
+          <input type="number" class="form-control" placeholder="RT" name="rt" value="<?php echo $d['rt']; ?>" required>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">RW :</label>
         <div class="col-sm-6">
-          <input type="number" class="form-control" placeholder="RW" name="rw" value="<?php echo $d['rw']; ?>">
+          <input type="number" class="form-control" placeholder="RW" name="rw" value="<?php echo $d['rw']; ?>" required>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Jarak Alamat Siswa ke Sekolah :</label><b>Meter</b>
         <div class="col-sm-4">
-          <input type="number" class="form-control" placeholder="Jarak Rumah ke Sekolah" name="jarak_kesekolah" value="<?php echo $d['jarak_kesekolah']; ?>">
+          <input type="number" class="form-control" placeholder="Jarak Rumah ke Sekolah" name="jarak_kesekolah" required>
         </div>
       </div>
 
@@ -271,13 +276,13 @@ if ($_SESSION['status']!="siswa") {
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Nama Orang Tua/Wali :</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" placeholder="Nama Orang Tua" name="nama_org_tua" value="<?php echo $d['nama_org_tua']; ?>">
+          <input type="text" class="form-control" placeholder="Nama Orang Tua" name="nama_org_tua" value="<?php echo $d['nama_org_tua']; ?>" required>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Pekerjaan Orang Tua/Wali :</label>
         <div class="col-sm-6">
-          <input type="text" class="form-control" placeholder="Pekerjaan Orang Tua" name="pekerjaan_org_tua" value="<?php echo $d['pekerjaan_org_tua']; ?>">
+          <input type="text" class="form-control" placeholder="Pekerjaan Orang Tua" name="pekerjaan_org_tua" value="<?php echo $d['pekerjaan_org_tua']; ?>" required>
         </div>
       </div>
       <div class="form-group">
@@ -292,25 +297,118 @@ if ($_SESSION['status']!="siswa") {
       <div class="form-group">
         <label class="control-label col-sm-2">Nilai Bahasa Indonesia </label>
         <div class="col-sm-3">
-          <input type="number" class="form-control" placeholder="Nilai Bahasa Indonesia" name="un_bind" value="<?php echo $d['un_bind']; ?>">
+          <input type="number" class="form-control" placeholder="Nilai Bahasa Indonesia" name="un_bind" value="<?php echo $d['un_bind']; ?>" required>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2">Nilai Bahasa Inggris </label>
         <div class="col-sm-3">
-          <input type="number" class="form-control" placeholder="Nilai Bahasa Inggris" name="un_bing" value="<?php echo $d['un_bing']; ?>">
+          <input type="number" class="form-control" placeholder="Nilai Bahasa Inggris" name="un_bing" value="<?php echo $d['un_bing']; ?>" required>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2">Nilai Matematika </label>
         <div class="col-sm-3">
-          <input type="number" class="form-control" placeholder="Nilai Matematika" name="un_mtk" value="<?php echo $d['un_mtk']; ?>">
+          <input type="number" class="form-control" placeholder="Nilai Matematika" name="un_mtk" value="<?php echo $d['un_mtk']; ?>" required>
         </div>
       </div>
       <div class="form-group">
         <label class="control-label col-sm-2">Nilai IPA </label>
         <div class="col-sm-3">
-          <input type="number" class="form-control" placeholder="Nilai IPA" name="un_ipa" value="<?php echo $d['un_ipa']; ?>">
+          <input type="number" class="form-control" placeholder="Nilai IPA" name="un_ipa" value="<?php echo $d['un_ipa']; ?>" required>
+        </div>
+      </div>
+      <br>
+
+
+      <h4>F. INPUT SCAN BERKAS CALON PESERTA DIDIK</h4>
+
+      <div class="form-group">
+        <label class="control-label col-sm-2">SKHUN atau Surat Keterangan Lulus</label>
+        <div class="col-sm-6">
+          <input type="file" name="pdf_skhun" accept="application/pdf" class="form-control-file" id="cek_skhu" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Surat Sehat dari Dokter Pemerintah</label>
+        <div class="col-sm-6">
+          <input type="file" name="pdf_surat_dokter" accept="application/pdf" class="form-control-file" id="cek_surat_dokter" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Kartu Keluarga (KK) </label>
+        <div class="col-sm-6">
+          <input type="file" name="pdf_kk" accept="application/pdf" class="form-control-file" id="cek_kk" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Akta Kelahiran </label>
+        <div class="col-sm-6">
+          <input type="file" name="pdf_akta" accept="application/pdf" class="form-control-file" id="cek_akta" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Photo </label>
+        <div class="col-sm-6">
+          <input type="file" name="pdf_photo" accept="application/pdf" class="form-control-file" id="cek_photo" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Swafoto memegang KK Sedang diukur tinggi badan </label>
+        <div class="col-sm-6">
+          <input type="file" name="pdf_swa_kk" accept="application/pdf" class="form-control-file" id="cek_swa_kk" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Piagam 1 </label>
+        <div class="col-sm-6">
+          <input type="file" name="pdf_piagam1" accept="application/pdf" class="form-control-file" id="cek_piagam1">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Piagam 2</label>
+        <div class="col-sm-6">
+          <input type="file" name="pdf_piagam2" accept="application/pdf" class="form-control-file" id="cek_piagam2">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Piagam 3 </label>
+        <div class="col-sm-6">
+          <input type="file" name="pdf_piagam3" accept="application/pdf" class="form-control-file" id="cek_piagam3">
+        </div>
+      </div>
+      <h6><b>Informasi :</h6>
+      <h6>1. File harus dengan format <b>.pdf</b> dengan ukuran maksimal <b>500 kb</b></h6>
+      <h6>2. Dokumen yang di <b>Scan Harus Asli (bukan Photo Copy)</b></h6>
+      <h6>3. Piagam boleh dikosongkan</h6>
+      <h6>4. Piagam hasil perlombaan dan/atau penghargaan di bidang akademik maupun non akademik</h6>
+      <h6>5. Contoh swa photo dapat dilihat di link berikut(belum di kerjakan)</h6>
+      <h6>6. Surat sehat harus ditandatangani oleh dokter pemerintah.</h6>
+
+      <br>
+      <h4>G. INPUT NILAI UJIAN NASIONAL PESERTA DIDIK</h4>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Nilai Bahasa Indonesia </label>
+        <div class="col-sm-3">
+          <input type="number" class="form-control" placeholder="Nilai Bahasa Indonesia" name="un_bind" value="" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Nilai Bahasa Inggris </label>
+        <div class="col-sm-3">
+          <input type="number" class="form-control" placeholder="Nilai Bahasa Inggris" name="un_bing" value="" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Nilai Matematika </label>
+        <div class="col-sm-3">
+          <input type="number" class="form-control" placeholder="Nilai Matematika" name="un_mtk" value="" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2">Nilai IPA </label>
+        <div class="col-sm-3">
+          <input type="number" class="form-control" placeholder="Nilai IPA" name="un_ipa" value="" required>
         </div>
       </div>
       <br>
@@ -319,7 +417,7 @@ if ($_SESSION['status']!="siswa") {
         <label class="control-label col-sm-2">Apakah anda bertindik (bagi laki-laki) </label>
         <div class="col-sm-2">
           <select name="bertindik" class="form-control" required>
-            <option value="<?php echo $d['bertindik']; ?>"> <?php echo $d['bertindik']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
             <option value="Perempuan">Saya Perempuan</option>
@@ -330,7 +428,7 @@ if ($_SESSION['status']!="siswa") {
         <label class="control-label col-sm-2">Apakah anda Perokok </label>
         <div class="col-sm-2">
           <select name="perokok" class="form-control" value="<?php echo $d['perokok']; ?>" required>
-            <option value="<?php echo $d['perokok']; ?>"> <?php echo $d['perokok']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -340,7 +438,7 @@ if ($_SESSION['status']!="siswa") {
         <label class="control-label col-sm-2">Apakah anda pemakai Psikotropika<br>(Narkoba, Ganja dan sejenisnya) </label>
         <div class="col-sm-2">
           <select name="psikotropika" class="form-control" required>
-            <option value="<?php echo $d['psikotropika']; ?>"> <?php echo $d['psikotropika']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -350,7 +448,7 @@ if ($_SESSION['status']!="siswa") {
         <label class="control-label col-sm-2">Apakah anda bertato </label>
         <div class="col-sm-2">
           <select name="bertato" class="form-control" required>
-            <option value='<?php echo $d['bertato']; ?>'> <?php echo $d['bertato']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -360,7 +458,7 @@ if ($_SESSION['status']!="siswa") {
         <label class="control-label col-sm-2">Apakah anda peminum-minuman keras </label>
         <div class="col-sm-2">
           <select name="peminum" class="form-control" required>
-            <option value="<?php echo $d['peminum']; ?>"> <?php echo $d['peminum']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -370,12 +468,13 @@ if ($_SESSION['status']!="siswa") {
         <label class="control-label col-sm-2">Apakah anda Buta Warna </label>
         <div class="col-sm-2">
           <select name="buta_warna" class="form-control" required>
-            <option value="<?php echo $d['buta_warna']; ?>"> <?php echo $d['buta_warna']; ?> </option>
+            <option value="">Pilihan Anda</option>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
         </div>
       </div>
+      <br>
 
       <?php
       } ?>
