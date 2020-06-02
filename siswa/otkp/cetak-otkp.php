@@ -33,7 +33,7 @@
 
     <?php
       include '../../koneksi.php';
-      $nik = $_GET['nik'];
+      $id = $_GET['id'];
       $data = mysqli_query($koneksi, "select
 
       id,
@@ -88,7 +88,7 @@
       laptop,
       kompetensi_keahlian_2
 
-       from f_siswa_rpl where nik='$nik'");
+       from f_siswa_oktp where id='$id'");
       while ($d = mysqli_fetch_array($data)) {
           ?>
 
