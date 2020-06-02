@@ -379,4 +379,4 @@ mysqli_query($koneksi, "UPDATE f_siswa_tkj SET
 
 
 // node_id=<?php echo $d['node_id'];
- header("location:cetak-tkj.php?id=$id");
+ // header("location:cetak-tkj.php?id=$id");
