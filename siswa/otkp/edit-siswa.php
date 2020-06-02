@@ -37,8 +37,8 @@ if ($_SESSION['status']!="siswa") {
 
     <?php
       include '../../../koneksi.php';
-      $id = $_GET['id'];
-      $data = mysqli_query($koneksi, "select * from f_siswa_otkp where id='$id'");
+      $nik = $_GET['nik'];
+      $data = mysqli_query($koneksi, "select * from f_siswa_otkp where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           ?>
 
