@@ -75,7 +75,7 @@ if ($_SESSION['status']!="siswa") {
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Kompetensi Keahlian :</label>
       <div class="col-sm-6">
-        <select name="kompetensi_keahlian" class="form-control" >
+        <select name="kompetensi_keahlian" class="form-control" readonly>
               <option value="<?php echo $d['kompetensi_keahlian']; ?>">Jurusan Awal (<?php echo $d['kompetensi_keahlian']; ?>)</option>
               <option value="Teknik Komputer Jaringan">Teknik Komputer Jaringan</option>
               <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
