@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../css/bootstrap.min.css">
   <script src="../../js/bootstrap.min.js"></script>
-</head>
 <body>
 
 <div class="container">
@@ -22,7 +21,7 @@
           <center><h6><b>Bukti Pendaftaran Calon Peserta Didik Baru</b></h6></center>
           <center><h6><b>Calon Peserta Didik Baru</b></h6></center>
           <center><h6><b>Tahun Pelajaran 2020/2021</b></h6></center>
-          <center><h6><b>Program Studi Rekayasa Perangkat Lunak</b></h6></center><br>
+          <center><h6><b>Program Studi Teknik Pemesinan</b></h6></center><br>
         </td>
         <td>
           <center><img style="margin-bottom:  80px; margin-top:  25px; margin-left: 90px" src="../../images/logo-smkn1-cetak.png" />
@@ -34,7 +33,7 @@
 
     <?php
       include '../../koneksi.php';
-      $nik = $_GET['nik'];
+      $id = $_GET['id'];
       $data = mysqli_query($koneksi, "select
 
       id,
@@ -86,10 +85,10 @@
       perokok,
       peminum,
       buta_warna,
-      laptop,
+      tinggi_bdn,
       kompetensi_keahlian_2
 
-       from f_siswa_rpl where nik='$nik'");
+       from f_siswa_mesin where id='$id'");
       while ($d = mysqli_fetch_array($data)) {
           ?>
 
@@ -248,8 +247,8 @@
         <td><?php echo $d['buta_warna']; ?></td>
       </tr>
       <tr>
-        <td>Kesanggupan Mempunyai Laptop</td>
-        <td><?php echo $d['laptop']; ?></td>
+        <td>Tinggi Badan</td>
+        <td><?php echo $d['tinggi_bdn']; ?></td>
       </tr>
       <tr>
         <td>Pilihan Kompetensi Keahlian ke-2</td>

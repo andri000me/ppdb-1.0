@@ -273,7 +273,7 @@ $perokok = $_POST['perokok'];
 $psikotropika = $_POST['psikotropika'];
 $bertato = $_POST['bertato'];
 $peminum = $_POST['peminum'];
-$laptop = $_POST['laptop'];
+$tinggi_bdn = $_POST['tinggi_bdn'];
 $buta_warna = $_POST['buta_warna'];
 $kompetensi_keahlian_2 = $_POST['kompetensi_keahlian_2'];
 
@@ -369,7 +369,7 @@ mysqli_query($koneksi, "UPDATE f_siswa_mesin SET
              psikotropika='$psikotropika',
              bertato='$bertato',
              peminum='$peminum',
-             laptop='$laptop',
+             tinggi_bdn='$tinggi_bdn',
              buta_warna='$buta_warna',
              kompetensi_keahlian_2='$kompetensi_keahlian_2'
              where id='$id'
