@@ -30,10 +30,10 @@ if ($cek > 0) {
         // echo "cek 1";
     } else {
         // echo "gagal1";
-        header("location:login.php?pesan=gagal1");
+        header("location:login/otkp/login.php?pesan=gagal1");
     }
 } else {
     // echo "gagal2";
 
-    header("location:index.php?pesan=gagal");
+    header("location:login/otkp/index.php?pesan=gagal");
 }
