@@ -51,11 +51,14 @@ if ($_SESSION['status']!="siswa") {
   <form class="form-horizontal" action="update-siswa.php" name="input" method="POST"  enctype="multipart/form-data" onSubmit="return validasi()">
 
     <?php
-      include '../../../koneksi.php';
+      include '../../koneksi.php';
       $nik = $_GET['nik'];
       $data = mysqli_query($koneksi, "select * from f_siswa_otkp where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
-          ?>
+          $cek_npsn = $d['npsn_sekolah'];
+          if (!empty($cek_npsn)) {
+              header("location:tkj-lihat.php?nik=$nik");
+          } ?>
 
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Nomor Pendaftaran :</label>
