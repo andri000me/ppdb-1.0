@@ -28,17 +28,28 @@ if ($_SESSION['status']!="siswa") {
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
+          <center><img style="margin-top: 25px;" src="../../images/logo-banten.png" />
         </div>
         <div class="col-md-6">
           <center>
-            <h3>Form Pendaftaran Calon Peserta Didik</h3>
+            <h2 style="margin-top:  25px;"><b>SMK Negeri 1 Kragilan</b></h2>
           </center>
           <center>
-            <h3>Tampilan Edit Admin</h3>
+            <h4><b>Form Pendaftaran</b></h4>
           </center>
-          <br><br><br>
+          <center>
+            <h4><b>Calon Peserta Didik Baru</b></h4>
+          </center>
+          <center>
+            <h5><b>Tahun Pelajaran 2020/2021</b></h4>
+          </center>
+          <center>
+            <h4><b>Program Studi Teknik Komputer Jaringan</b></h4>
+          </center><br>
+          <!-- font ganti jenis -->
         </div>
         <div class="col-md-3">
+          <center><img style="margin-bottom:  80px; margin-top:  25px;" class="img-fluid" alt="Bootstrap Image Preview" src="../../images/logo-smkn1.png" />
         </div>
       </div>
     </div>
