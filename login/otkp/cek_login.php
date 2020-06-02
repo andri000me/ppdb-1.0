@@ -34,5 +34,6 @@ if ($cek > 0) {
     }
 } else {
     // echo "gagal2";
+
     header("location:index.php?pesan=gagal");
 }
