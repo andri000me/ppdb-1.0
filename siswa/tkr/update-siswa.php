@@ -368,7 +368,6 @@ mysqli_query($koneksi, "UPDATE f_siswa_tkr SET
              psikotropika='$psikotropika',
              bertato='$bertato',
              peminum='$peminum',
-             laptop='$laptop',
              buta_warna='$buta_warna',
              kompetensi_keahlian_2='$kompetensi_keahlian_2'
              where id='$id'
