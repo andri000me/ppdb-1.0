@@ -36,8 +36,8 @@ if ($_SESSION['status']!="siswa") {
 
     <?php
       include '../../../koneksi.php';
-      $id = $_GET['id'];
-      $data = mysqli_query($koneksi, "select * from f_siswa_mesin where id='$id'");
+      $nik = $_GET['nik'];
+      $data = mysqli_query($koneksi, "select * from f_siswa_mesin where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           ?>
 
@@ -57,37 +57,16 @@ if ($_SESSION['status']!="siswa") {
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Kompetensi Keahlian :</label>
       <div class="col-sm-6">
-        <select name="kompetensi_keahlian" class="form-control" >
-              <option value="<?php echo $d['kompetensi_keahlian']; ?>">Jurusan Awal (<?php echo $d['kompetensi_keahlian']; ?>)</option>
-              <option value="Teknik Komputer Jaringan">Teknik Komputer Jaringan</option>
-              <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
-              <option value="Akuntansi Keuangan Lembaga">Akuntansi Keuangan Lembaga</option>
-              <option value="Otomatisasi Tata Kelola Perkantoran">Otomatisasi Tata Kelola Perkantoran</option>
-              <option value="Teknik Kendaraan Ringan">Teknik Kendaraan Ringan</option>
-              <option value="Teknik Pemesinan">Teknik Pemesinan</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="form-group">
-      <label class="control-label col-sm-2" for="email">Kompetensi Keahlian Pilihan ke-2 :</label>
-      <div class="col-sm-6">
-        <select name="kompetensi_keahlian_2" class="form-control" id="exampleFormControlSelect1" required>
-          <option value="<?php echo $d['kompetensi_keahlian_2']; ?>">Jurusan Awal (<?php echo $d['kompetensi_keahlian_2']; ?>)</option>
-          <option value="-">Saya tidak memilih</option>
-          <option value="Teknik Komputer Jaringan">Teknik Komputer Jaringan</option>
-          <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
-          <option value="Akuntansi Keuangan Lembaga">Akuntansi Keuangan Lembaga</option>
-          <option value="Otomatisasi Tata Kelola Perkantoran">Otomatisasi Tata Kelola Perkantoran</option>
-          <option value="Teknik Kendaraan Ringan">Teknik Kendaraan Ringan</option>
-          <option value="Teknik Pemesinan">Teknik Pemesinan</option>
-        </select>
-        <br><p>1. Kompetensi Keahlian Pilihan ke-2 ini boleh tidak dipilih.
-          <br>2. Jika kompetensi keahlian utama tidak diterima maka akan di proses passing grade oleh panitia
-        dipilihan kompetensi keahlian ke-2. (Ini tidak menjamin untuk diterima)</p>
+        <input type="text" class="form-control" name="kompetensi_keahlian" value="<?php echo $d['kompetensi_keahlian']; ?>" readonly>
       </div>
-
     </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Kompetensi Keahlian Ke-2 :</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control" name="kompetensi_keahlian_2" value="<?php echo $d['kompetensi_keahlian_2']; ?>" readonly>
+      </div>
+    </div>
+
 
     <br><h4>A. DATA ASAL SEKOLAH CALON PESERTA DIDIK</h4>
     <div class="form-group">
