@@ -136,7 +136,7 @@ if ($_SESSION['status']!="siswa") {
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Jenis Kelamin :</label>
       <div class="col-sm-2">
-        <select name="jenis_kelamin" class="form-control" >
+        <select name="jenis_kelamin" class="form-control" readonly>
               <option value="laki-laki">Laki-laki</option>
               <option value="perempuan">Perempuan</option>
             </select>
@@ -151,7 +151,7 @@ if ($_SESSION['status']!="siswa") {
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Tanggal Lahir :</label>
       <div class="col-sm-3">
-        <input type="text" name="tgl_lahir" value="<?php echo $d['tgl_lahir']; ?>"  class="form-control datepicker" readonly/>
+        <input type="text" name="tgl_lahir" value="<?php echo $d['tgl_lahir']; ?>"  class="form-control datepicker" readonly>
       </div>
       (Bulan/Tanggal/Tahun)
     </div>
