@@ -23,26 +23,89 @@ if ($_SESSION['status']!="siswa") {
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
+          <center><img style="margin-top: 25px;" src="../../images/logo-banten.png" />
         </div>
         <div class="col-md-6">
           <center>
-            <h3>Form Pendaftaran Calon Peserta Didik</h3>
+            <h2 style="margin-top:  25px;"><b>SMK Negeri 1 Kragilan</b></h2>
           </center>
           <center>
-            <h3>Tampilan Edit Admin</h3>
+            <h4><b>Form Pendaftaran</b></h4>
           </center>
-          <br><br><br>
+          <center>
+            <h4><b>Calon Peserta Didik Baru</b></h4>
+          </center>
+          <center>
+            <h5><b>Tahun Pelajaran 2020/2021</b></h4>
+          </center>
+          <center>
+            <h4><b>Program Studi Teknik Komputer Jaringan</b></h4>
+          </center><br>
+          <!-- font ganti jenis -->
         </div>
         <div class="col-md-3">
+          <center><img style="margin-bottom:  80px; margin-top:  25px;" class="img-fluid" alt="Bootstrap Image Preview" src="../../images/logo-smkn1.png" />
         </div>
       </div>
     </div>
+
     <form class="form-horizontal" action="update-siswa.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
 
       <?php
       include '../../koneksi.php';
       $nik = $_GET['nik'];
-      $data = mysqli_query($koneksi, "select * from f_siswa_tkr where nik='$nik'");
+      $data = mysqli_query($koneksi, "select
+      id,
+      no_p,
+      tgl_pendaftaran,
+      kompetensi_keahlian,
+      asal_sekolah,
+      npsn_sekolah,
+      nisn,
+      nama_siswa,
+      jenis_kelamin,
+      tgl_lahir,
+      tempat_lahir,
+      tahun_lulus,
+      nik,
+      no_kk,
+      tgl_kk,
+      kota,
+      kecamatan,
+      kelurahan,
+      kode_pos,
+      alamat,
+      rt,
+      rw,
+      jarak_kesekolah,
+      nama_org_tua,
+      pekerjaan_org_tua,
+      kip,
+      pdf_skhun,
+      pdf_surat_dokter,
+      pdf_kk,
+      pdf_akta,
+      pdf_photo,
+      pdf_swa_kk,
+      pdf_piagam1,
+      pdf_piagam2,
+      pdf_piagam3,
+      un_bind,
+      un_bing,
+      un_mtk,
+      un_ipa,
+      id,
+      username,
+      password,
+      enk,
+      bertindik,
+      psikotropika,
+      bertato,
+      perokok,
+      peminum,
+      buta_warna,
+      kompetensi_keahlian_2
+       from f_siswa_tkr where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           ?>
 
