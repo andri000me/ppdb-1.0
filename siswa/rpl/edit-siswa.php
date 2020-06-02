@@ -1,15 +1,8 @@
-<?php
+nik<?php
 session_start();
 
-include '../../koneksi.php';
-$id = $_GET['id'];
-
-$cek_id = mysqli_query($koneksi, "SELECT id FROM f_siswa_rpl where id='$id'");
-while ($row = mysqli_fetch_array($cek_id)) {
-    $dapat_id = $row['id'];
-}
-
-if ($_SESSION['id']!="$dapat_id") {
+session_start();
+if ($_SESSION['status']!="siswa") {
     header("location:../../index.php?pesan=belum_login");
 }
 
@@ -53,8 +46,8 @@ if ($_SESSION['id']!="$dapat_id") {
 
       <?php
       include '../../koneksi.php';
-      $id = $_GET['id'];
-      $data = mysqli_query($koneksi, "select * from f_siswa_rpl where id='$id'");
+      $nik = $_GET['nik'];
+      $data = mysqli_query($koneksi, "select * from f_siswa_rpl where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           ?>
 
