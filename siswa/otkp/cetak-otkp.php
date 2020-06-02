@@ -85,7 +85,7 @@
       perokok,
       peminum,
       buta_warna,
-      laptop,
+      tinggi_bdn,
       kompetensi_keahlian_2
 
        from f_siswa_otkp where id='$id'");
@@ -247,8 +247,8 @@
         <td><?php echo $d['buta_warna']; ?></td>
       </tr>
       <tr>
-        <td>Kesanggupan Mempunyai Laptop</td>
-        <td><?php echo $d['laptop']; ?></td>
+        <td>Tinggi Badan</td>
+        <td><?php echo $d['tinggi_bdn']; ?></td>
       </tr>
       <tr>
         <td>Pilihan Kompetensi Keahlian ke-2</td>
