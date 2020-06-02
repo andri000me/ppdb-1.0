@@ -293,33 +293,6 @@ if ($_SESSION['status']!="siswa") {
       </div>
 
       <br>
-      <h4>F. INPUT NILAI UJIAN NASIONAL PESERTA DIDIK</h4>
-      <div class="form-group">
-        <label class="control-label col-sm-2">Nilai Bahasa Indonesia </label>
-        <div class="col-sm-3">
-          <input type="number" class="form-control" placeholder="Nilai Bahasa Indonesia" name="un_bind" value="<?php echo $d['un_bind']; ?>" required>
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label col-sm-2">Nilai Bahasa Inggris </label>
-        <div class="col-sm-3">
-          <input type="number" class="form-control" placeholder="Nilai Bahasa Inggris" name="un_bing" value="<?php echo $d['un_bing']; ?>" required>
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label col-sm-2">Nilai Matematika </label>
-        <div class="col-sm-3">
-          <input type="number" class="form-control" placeholder="Nilai Matematika" name="un_mtk" value="<?php echo $d['un_mtk']; ?>" required>
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label col-sm-2">Nilai IPA </label>
-        <div class="col-sm-3">
-          <input type="number" class="form-control" placeholder="Nilai IPA" name="un_ipa" value="<?php echo $d['un_ipa']; ?>" required>
-        </div>
-      </div>
-      <br>
-
 
       <h4>F. INPUT SCAN BERKAS CALON PESERTA DIDIK</h4>
 
