@@ -1,6 +1,6 @@
 <br><br><br>
 <a style="margin-right: 10px;" type="button" class="btn btn-danger btn-md" href="index.php">Kembali</a>
-<a style="margin-right: 25px;" type="button" class="btn btn-warning btn-md" href="../../../siswa/tkr/cetak-tkr.php?nik=<?php echo $d['nik']; ?>">Cetak PDF</a>
+<!-- <a style="margin-right: 25px;" type="button" class="btn btn-warning btn-md" href="../../../siswa/tkr/cetak-tkr.php?nik=<?php echo $d['nik']; ?>">Cetak PDF</a> -->
 
 
 <table class="table table-bordered">
