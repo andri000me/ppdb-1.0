@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['status']!="admin") {
+if ($_SESSION['status']!="siswa") {
     header("location:../../index.php?pesan=belum_login");
 }
 ?>
@@ -36,7 +36,7 @@ if ($_SESSION['status']!="admin") {
   <table class="table table-bordered">
     <?php
       include '../../../koneksi.php';
-      $id = $_GET['id'];
+      $nik = $_GET['nik'];
       $data = mysqli_query($koneksi, "select
 
       id,
@@ -93,7 +93,7 @@ if ($_SESSION['status']!="admin") {
       laptop,
       kompetensi_keahlian_2
 
-       from f_siswa_rpl where id='$id'");
+       from f_siswa_rpl where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           include('rpl-tampil.php'); ?>
 
