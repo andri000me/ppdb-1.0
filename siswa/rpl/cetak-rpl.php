@@ -37,7 +37,7 @@
 
     <?php
       include '../../koneksi.php';
-      $id = $_GET['id'];
+      $id = isset($_GET['id']) ? abs((int) $_GET['id']) : 0;
       $data = mysqli_query($koneksi, "select
 
       id,
