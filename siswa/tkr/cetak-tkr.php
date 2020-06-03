@@ -1,7 +1,7 @@
 <?php
 session_start();
-if ($_SESSION['status']!="tkr") {
-    header("location:../../login/akl/index.php?pesan=belum_login");
+if ($_SESSION['status']!="siswa") {
+    header("location:../../login/tkr/index.php?pesan=belum_login");
 }
 ?>
 <!DOCTYPE html>
