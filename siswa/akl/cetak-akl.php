@@ -35,7 +35,8 @@
 
     <?php
       include '../../koneksi.php';
-      $id = mysql_real_escape_string($_GET['id']);
+       $id = isset($_GET['id']) ? abs((int) $_GET['id']) : 0;
+      // $id = mysql_real_escape_string($_GET['id']);
       // $id = $_GET['id'];
       $data = mysqli_query($koneksi, "select
 
