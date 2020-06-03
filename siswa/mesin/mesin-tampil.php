@@ -3,7 +3,8 @@
 <table>
   <tr>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;"
-      class="btn btn-danger btn-md" href="index.php">Kembali</a></td>
+      class="btn btn-danger btn-md" href="../../login/mesin/logout.php">Keluar</a></td>
+    </td>
 
     <td>
       <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md"
