@@ -4,7 +4,7 @@
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="index.php">Kembali</a></td>
     </td>
     <td>
-      <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak-akl.php?nik=<?php echo $d['nik']; ?>">Cetak PDF</a>
+      <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak-akl.php?id=<?php echo $d['id']; ?>">Cetak PDF</a>
     </td>
   </tr>
 </table>
