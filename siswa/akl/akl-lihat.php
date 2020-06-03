@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_SESSION['status']!="siswa") {
-    header("location:../../index.php?pesan=belum_login");
+    header("location:../../login/akl/index.php?pesan=belum_login");
 }
 ?>
 
@@ -36,7 +36,7 @@ if ($_SESSION['status']!="siswa") {
   <table class="table table-bordered">
     <?php
       include '../../../koneksi.php';
-      $id = $_GET['id'];
+       $id = isset($_GET['id']) ? abs((int) $_GET['id']) : 0;
       $data = mysqli_query($koneksi, "select
 
       id,
