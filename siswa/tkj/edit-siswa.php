@@ -69,8 +69,9 @@ if ($_SESSION['status']!="siswa") {
           //     echo "heloo";
           //     header("location:tkj-lihat.php?nik=$nik");
           // }
-          if ($cek_npsn = '1') {
-              echo "heloo";
+          // if ($cek_npsn = '1') {
+          if (empty($cek_npsn)) {
+              // echo "heloo";
               // header("location:tkj-lihat.php?nik=$nik");
               include('tkj-tampil.php');
               exit;
