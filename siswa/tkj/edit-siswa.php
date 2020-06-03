@@ -66,6 +66,7 @@ if ($_SESSION['status']!="siswa") {
           $cek_npsn = $d['npsn_sekolah'];
           echo $cek_npsn;
           if (empty($cek_npsn)) {
+              echo "heloo";
               header("location:tkj-lihat.php?nik=$nik");
           } ?>
 
