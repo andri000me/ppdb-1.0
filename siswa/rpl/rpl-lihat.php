@@ -36,7 +36,7 @@ if ($_SESSION['status']!="siswa") {
   <table class="table table-bordered">
     <?php
       include '../../../koneksi.php';
-      $nik = $_GET['nik'];
+      $id = isset($_GET['id']) ? abs((int) $_GET['id']) : 0;
       $data = mysqli_query($koneksi, "select
 
       id,

@@ -1,3 +1,9 @@
+<?php
+session_start();
+if ($_SESSION['status']!="siswa") {
+    header("location:../../login/rpl/index.php?pesan=belum_login");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,3 +1,9 @@
+<?php
+session_start();
+if ($_SESSION['status']!="tkr") {
+    header("location:../../login/akl/index.php?pesan=belum_login");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
