@@ -5,7 +5,7 @@
       class="btn btn-danger btn-md" href="../../login/tkr/logout.php">Keluar</a></td>
     </td>
     <td>
-      <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="../../../siswa/tkr/tampil-tkr.php?id=<?php echo $d['id']; ?>">Cetak PDF</a>
+      <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="cetak-tkr.php?id=<?php echo $d['id']; ?>">Cetak PDF</a>
     </td>
   </tr>
 </table>
