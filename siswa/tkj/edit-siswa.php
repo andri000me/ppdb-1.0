@@ -63,16 +63,10 @@ if ($_SESSION['status']!="siswa") {
       $nik = $_GET['nik'];
       $data = mysqli_query($koneksi, "select * from f_siswa_tkj where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
+
+        //validasi jika npsn kosong
           $cek_npsn = $d['npsn_sekolah'];
-          echo $cek_npsn;
-          // if (empty($cek_npsn)) {
-          //     echo "heloo";
-          //     header("location:tkj-lihat.php?nik=$nik");
-          // }
-          // if ($cek_npsn = '1') {
           if (!empty($cek_npsn)) {
-              // echo "heloo";
-              // header("location:tkj-lihat.php?nik=$nik");
               include('tkj-tampil.php');
               exit;
           } ?>
