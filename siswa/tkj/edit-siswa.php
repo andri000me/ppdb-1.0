@@ -64,6 +64,7 @@ if ($_SESSION['status']!="siswa") {
       $data = mysqli_query($koneksi, "select * from f_siswa_tkj where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           $cek_npsn = $d['npsn_sekolah'];
+          echo $cek_npsn;
           if (!empty($cek_npsn)) {
               header("location:tkj-lihat.php?nik=$nik");
           } ?>
