@@ -64,7 +64,7 @@ if ($_SESSION['status']!="siswa") {
         //verifikasi npsn
           $cek_npsn = $d['npsn_sekolah'];
           if (!empty($cek_npsn)) {
-              header("location:tkj-lihat.php?nik=$nik");
+              header("location:rpl-lihat.php?nik=$nik");
           } ?>
 
 
