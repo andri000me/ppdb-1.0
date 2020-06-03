@@ -107,7 +107,12 @@ if ($_SESSION['status']!="siswa") {
       kompetensi_keahlian_2
        from f_siswa_akl where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
-          ?>
+          //validasi jika npsn kosong
+          $cek_npsn = $d['npsn_sekolah'];
+          if (!empty($cek_npsn)) {
+              include('akl-tampil.php');
+              exit;
+          } ?>
 
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Nomor Pendaftaran :</label>

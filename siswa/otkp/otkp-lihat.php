@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['status']!="admin") {
+if ($_SESSION['status']!="siwa") {
     header("location:../../index.php?pesan=belum_login");
 }
 ?>
