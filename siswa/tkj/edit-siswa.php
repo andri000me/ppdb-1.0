@@ -65,7 +65,7 @@ if ($_SESSION['status']!="siswa") {
       while ($d = mysqli_fetch_array($data)) {
           $cek_npsn = $d['npsn_sekolah'];
           echo $cek_npsn;
-          if (!empty($cek_npsn)) {
+          if (empty($cek_npsn)) {
               header("location:tkj-lihat.php?nik=$nik");
           } ?>
 
