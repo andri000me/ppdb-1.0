@@ -70,7 +70,7 @@ if ($_SESSION['status']!="siswa") {
           //     header("location:tkj-lihat.php?nik=$nik");
           // }
           // if ($cek_npsn = '1') {
-          if (empty($cek_npsn)) {
+          if (!empty($cek_npsn)) {
               // echo "heloo";
               // header("location:tkj-lihat.php?nik=$nik");
               include('tkj-tampil.php');
