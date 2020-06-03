@@ -2,7 +2,6 @@
 <table>
   <tr>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="index.php">Kembali</a></td>
-    <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-warning btn-md" href="edit-siswa.php?id=<?php echo $d['id']; ?>"> Edit</a>
     </td>
     <td>
       <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="../../../siswa/rpl/tampil-rpl.php?nik=<?php echo $d['nik']; ?>">Cetak PDF</a>
