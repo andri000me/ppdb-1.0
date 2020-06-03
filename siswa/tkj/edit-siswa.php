@@ -72,6 +72,7 @@ if ($_SESSION['status']!="siswa") {
           if ($cek_npsn = '1') {
               echo "heloo";
               header("location:tkj-lihat.php?nik=$nik");
+              exit;
           } ?>
 
       <div class="form-group">
