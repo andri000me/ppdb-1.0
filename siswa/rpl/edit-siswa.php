@@ -44,7 +44,7 @@ if ($_SESSION['status']!="siswa") {
             <h5><b>Tahun Pelajaran 2020/2021</b></h4>
           </center>
           <center>
-            <h4><b>Program Studi Teknik Komputer Jaringan</b></h4>
+            <h4><b>Program Studi Rekayasa Perangkat Lunak</b></h4>
           </center><br>
           <!-- font ganti jenis -->
         </div>
@@ -60,7 +60,12 @@ if ($_SESSION['status']!="siswa") {
       $nik = $_GET['nik'];
       $data = mysqli_query($koneksi, "select * from f_siswa_rpl where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
-          ?>
+
+        //verifikasi npsn
+          $cek_npsn = $d['npsn_sekolah'];
+          if (!empty($cek_npsn)) {
+              header("location:tkj-lihat.php?nik=$nik");
+          } ?>
 
 
       <div class="form-group">
