@@ -220,7 +220,7 @@ if ($_SESSION['status']!="siswa") {
       <div class="form-group">
         <label class="control-label col-sm-2" for="email">Tanggal Diterbitkan KK :</label>
         <div class="col-sm-3">
-          <input type="text" name="tgl_kk" value="<?php echo $d['tgl_kk']; ?>" class="form-control datepicker" />
+          <input type="text" name="tgl_kk" value="<?php echo $d['tgl_kk']; ?>" class="form-control datepicker" readonly/>
         </div>
         (Bulan/Tanggal/Tahun)
       </div>
