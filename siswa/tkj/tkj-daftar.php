@@ -26,13 +26,13 @@
           <h2 style="margin-top:  25px;"><b>SMK Negeri 1 Kragilan</b></h2>
         </center>
         <center>
-          <h4><b>Pengumuman Daftar Calon Peserta Didik Seleksi Administrasi</b></h4>
+          <h4><b>Daftar Calon Peserta Didik yang sudah bisa Seleksi Administrasi</b></h4>
         </center>
         <center>
           <h5><b>Tahun Pelajaran 2020/2021</b></h4>
         </center>
         <center>
-          <h4><b>Program Studi Otomatisasi Tata Kelola Perkantoran</b></h4>
+          <h4><b>Program Studi Teknik Komputer Jaringan</b></h4>
         </center><br>
         <!-- font ganti jenis -->
       </div>
@@ -60,6 +60,9 @@
             <center>Nomor Pendaftaran
           </th>
           <th>
+            <center>Tanggal Pendaftaran
+          </th>
+          <th>
             <center>NISN Siswa
           </th>
           <th>
@@ -69,9 +72,9 @@
             <center>Asal Sekolah
           </th>
           <!-- Data di buka bos :) -->
-          <th>
+          <!-- <th>
             <center>Lolos Seleksi
-          </th>
+          </th> -->
         </tr>
       </thead>
       <tbody>
@@ -81,12 +84,12 @@
       $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
       $mulai = ($page>1) ? ($page * $halperpage) - $halperpage : 0;
       $result = mysqli_query($koneksi, "SELECT no_p,tgl_pendaftaran,nisn,nama_siswa,kompetensi_keahlian,asal_sekolah,kondisi,id
-         FROM f_siswa_otkp");
+         FROM f_siswa_rpl");
       $total = mysqli_num_rows($result);
       $pages = ceil($total/$halperpage);
 
       $data = mysqli_query($koneksi, "SELECT no_p,tgl_pendaftaran,nisn,nama_siswa,kompetensi_keahlian,asal_sekolah,kondisi,id
-        from f_siswa_otkp where kompetensi_keahlian in ('Otomatisasi Tata Kelola Perkantoran') LIMIT $mulai, $halperpage ");
+        from f_siswa_rpl where kompetensi_keahlian in ('Teknik Komputer Jaringan') LIMIT $mulai, $halperpage ");
       $no = $mulai+1;
 
 
@@ -101,6 +104,9 @@
             <center><?php echo $d['no_p']; ?>
           </td>
           <td>
+            <center><?php echo $d['tgl_pendaftaran']; ?>
+          </td>
+          <td>
             <center><?php echo $d['nisn']; ?>
           </td>
           <td>
@@ -110,9 +116,9 @@
             <center><?php echo $d['asal_sekolah']; ?>
           </td>
           <!-- Data di buka bos :) -->
-          <td>
+          <!-- <td>
             <center><?php echo $d['kondisi']; ?>
-          </td>
+          </td> -->
         </tr>
 
         <?php

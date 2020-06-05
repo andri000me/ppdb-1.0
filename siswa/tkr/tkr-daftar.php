@@ -29,10 +29,10 @@
           <h4><b>Daftar Calon Peserta Didik yang sudah bisa Seleksi Administrasi</b></h4>
         </center>
         <center>
-          <h5><b>Tahun Pelajaran 2020/2021</b></h4>
+          <h4><b>Calon Peserta Didik Baru</b></h4>
         </center>
         <center>
-          <h4><b>Program Studi Otomatisasi Tata Kelola Perkantoran</b></h4>
+          <h4><b>Program Studi Teknik Kendaraan Ringan</b></h4>
         </center><br>
         <!-- font ganti jenis -->
       </div>
@@ -84,12 +84,12 @@
       $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
       $mulai = ($page>1) ? ($page * $halperpage) - $halperpage : 0;
       $result = mysqli_query($koneksi, "SELECT no_p,tgl_pendaftaran,nisn,nama_siswa,kompetensi_keahlian,asal_sekolah,kondisi,id
-         FROM f_siswa_otkp");
+         FROM f_siswa_tkr");
       $total = mysqli_num_rows($result);
       $pages = ceil($total/$halperpage);
 
       $data = mysqli_query($koneksi, "SELECT no_p,tgl_pendaftaran,nisn,nama_siswa,kompetensi_keahlian,asal_sekolah,kondisi,id
-        from f_siswa_otkp where kompetensi_keahlian in ('Otomatisasi Tata Kelola Perkantoran') LIMIT $mulai, $halperpage ");
+        from f_siswa_tkr where kompetensi_keahlian in ('Teknik Kendaraan Ringan') LIMIT $mulai, $halperpage ");
       $no = $mulai+1;
 
 
