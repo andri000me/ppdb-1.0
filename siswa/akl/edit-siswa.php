@@ -30,7 +30,7 @@ if ($_SESSION['status']!="siswa") {
             <h2 style="margin-top:  25px;"><b>SMK Negeri 1 Kragilan</b></h2>
           </center>
           <center>
-            <h4><b>Form Pendaftaran</b></h4>
+            <h4><b>Form Seleksi Administrasi</b></h4>
           </center>
           <center>
             <h4><b>Calon Peserta Didik Baru</b></h4>
