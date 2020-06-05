@@ -60,7 +60,7 @@
             <center>Nomor Pendaftaran
           </th>
           <th>
-            <center>Tanggal Pendaftaran
+            <center>Seleksi Administrasi
           </th>
           <th>
             <center>NISN Siswa
