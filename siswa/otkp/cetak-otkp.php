@@ -24,8 +24,7 @@ if ($_SESSION['status']!="siswa") {
         </td>
         <td>
           <center><h5 style="margin-top:  25px;"><b>SMK Negeri 1 Kragilan</b></h5></center>
-          <center><h6><b>Bukti Pendaftaran Calon Peserta Didik Baru</b></h6></center>
-          <center><h6><b>Calon Peserta Didik Baru</b></h6></center>
+          <center><h6><b>Bukti Seleksi Administrasi Calon Peserta Didik Baru</b></h6></center>
           <center><h6><b>Tahun Pelajaran 2020/2021</b></h6></center>
           <center><h6><b>Program Studi Otomatisasi Tata Kelola Perkantoran</b></h6></center><br>
         </td>
