@@ -22,7 +22,7 @@ $cek = mysqli_num_rows($data);
 if ($cek > 0) {
     $login = mysqli_fetch_assoc($data);
 
-    if ($login['kompetensi_keahlian']=="Otomatisasi Tata Kelola Perkantoran") {
+    if ($login['kompetensi_keahlian']=="Otomatisasi dan Tata Kelola Perkantoran") {
         $_SESSION['nisn'] = $nisn;
         $_SESSION['status'] = "siswa";
         header("location:../../siswa/otkp/edit-siswa.php?nik=$nik");

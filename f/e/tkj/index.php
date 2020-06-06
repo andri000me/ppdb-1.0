@@ -28,7 +28,7 @@
     <div class="col-sm-7">
       <a href="../../logout.php" type="button" class="btn btn-danger">Logout</a>
       <a href="tkj-lap.php" type="button" class="btn btn-success"
-      onclick="return confirm('Download Data PPDB Kompetensi Keahlian Rekayasa Perangkat Lunak ?')">Download TKJ</a>
+      onclick="return confirm('Download Data PPDB Kompetensi Keahlian Teknik Komputer Jaringan)">Download TKJ</a>
       <?php include('../menu.php'); ?>
     </div>
     <label class="control-label col-sm-2" for="email">Cari Peserta Calon Peserta Didik :</label>
@@ -75,7 +75,7 @@
       $pages = ceil($total/$halperpage);
 
       $data = mysqli_query($koneksi, "SELECT no_p,nisn,nama_siswa,kompetensi_keahlian,asal_sekolah,kondisi,id,tgl_pendaftaran
-        from f_siswa_tkj where kompetensi_keahlian in ('Rekayasa Perangkat Lunak') LIMIT $mulai, $halperpage ");
+        from f_siswa_tkj where kompetensi_keahlian in ('Teknik Komputer dan Jaringan') LIMIT $mulai, $halperpage ");
       $no = $mulai+1;
 
 

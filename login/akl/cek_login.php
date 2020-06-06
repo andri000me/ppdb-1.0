@@ -22,7 +22,7 @@ $cek = mysqli_num_rows($data);
 if ($cek > 0) {
     $login = mysqli_fetch_assoc($data);
 
-    if ($login['kompetensi_keahlian']=="Akuntansi Keuangan Lembaga") {
+    if ($login['kompetensi_keahlian']=="Akuntansi dan Keuangan Lembaga") {
         $_SESSION['nisn'] = $nisn;
         $_SESSION['status'] = "siswa";
         header("location:../../siswa/akl/edit-siswa.php?nik=$nik");

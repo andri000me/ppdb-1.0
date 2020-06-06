@@ -22,7 +22,7 @@ $cek = mysqli_num_rows($data);
 if ($cek > 0) {
     $login = mysqli_fetch_assoc($data);
 
-    if ($login['kompetensi_keahlian']=="Teknik Komputer Jaringan") {
+    if ($login['kompetensi_keahlian']=="Teknik Komputer dan Jaringan") {
         $_SESSION['nisn'] = $nisn;
         $_SESSION['status'] = "siswa";
         header("location:../../siswa/tkj/edit-siswa.php?nik=$nik");
