@@ -70,7 +70,7 @@
         asal_sekolah,
         nisn
 
-         FROM f_siswa_tkj");
+         FROM f_siswa_tk");
       $total = mysqli_num_rows($result);
       $pages = ceil($total/$halperpage);
 
