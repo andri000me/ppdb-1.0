@@ -41,6 +41,10 @@
       </div>
     </div>
 
+    <div class='alert alert-danger' role='alert'>
+      <center>Maaf jika nama pendaftar belum muncul tolong di cek kembali 1 sampai 2 hari :)
+    </div>
+
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Cari Peserta Calon Peserta Didik :</label>
       <div class="col-sm-3">
