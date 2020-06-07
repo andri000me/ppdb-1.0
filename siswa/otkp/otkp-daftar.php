@@ -89,7 +89,7 @@
       $pages = ceil($total/$halperpage);
 
       $data = mysqli_query($koneksi, "SELECT no_p,tgl_pendaftaran,nisn,nama_siswa,kompetensi_keahlian,asal_sekolah,kondisi,id
-        from f_siswa_otkp where kompetensi_keahlian in ('Otomatisasi Tata Kelola Perkantoran') LIMIT $mulai, $halperpage ");
+        from f_siswa_otkp where kompetensi_keahlian in ('Otomatisasi dan Tata Kelola Perkantoran') LIMIT $mulai, $halperpage ");
       $no = $mulai+1;
 
 
