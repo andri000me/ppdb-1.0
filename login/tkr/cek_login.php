@@ -25,14 +25,14 @@ if ($cek > 0) {
     if ($login['kompetensi_keahlian']=="Teknik Kendaraan Ringan Otomotif") {
         $_SESSION['nisn'] = $nisn;
         $_SESSION['status'] = "siswa";
-        header("location:../../siswa/tkr/edit-siswa.php?nik=$nik");
+        // header("location:../../siswa/tkr/edit-siswa.php?nik=$nik");
         // $_SESSION['status'] = "Teknik Komputer Jaringan";
-        // echo "cek 1";
+        echo "cek 1";
     } else {
-        // echo "gagal1";
-        header("location:index.php?pesan=gagal1");
+        echo "gagal1";
+        // header("location:index.php?pesan=gagal1");
     }
 } else {
-    // echo "gagal2";
-    header("location:index.php?pesan=gagal");
+    echo "gagal2";
+    // header("location:index.php?pesan=gagal");
 }
