@@ -9,7 +9,7 @@
     </td>
     <td>
       <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md"
-      href="../../../siswa/mesin/tampil-mesin.php?nik=<?php echo $d['nik']; ?>">Cetak PDF</a>
+      href="../../../siswa/mesin/cetak-mesin.php?id=<?php echo $d['id']; ?>">Cetak PDF</a>
     </td>
   </tr>
 </table>
