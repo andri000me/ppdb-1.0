@@ -2,6 +2,8 @@
 session_start();
 if ($_SESSION['status']!="siswa") {
     header("location:../../login/akl/index.php?pesan=belum_login");
+} elseif ($_SESSION['status']!="admin") {
+    // code...
 }
 ?>
 <!DOCTYPE html>
