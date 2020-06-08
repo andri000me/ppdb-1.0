@@ -171,10 +171,13 @@ if ($_SESSION['status']!="siswa") {
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Jenis Kelamin :</label>
-      <div class="col-sm-6">
-        <input type="text" class="form-control" placeholder="Nama" name="jenis_kelamin" value="<?php echo $d['jenis_kelamin']; ?>" readonly>
-
-     </div>
+      <div class="col-sm-2">
+        <select name="jenis_kelamin" class="form-control" id="exampleFormControlSelect1" required>
+          <option value="">Pilih</option>
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+      </div>
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Tempat Lahir :</label>
