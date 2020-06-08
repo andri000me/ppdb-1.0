@@ -203,8 +203,8 @@
     </tr>
     <tr>
       <td>Kartu Keluarga
-        <br>NIK : <b> <?php echo $d['no_kk']; ?> </b>
-        <br>Nomor KK : <b><?php echo $d['nik']; ?></b>
+        <br>NIK : <b> <?php echo $d['nik']; ?> </b>
+        <br>Nomor KK : <b><?php echo $d['no_kk']; ?></b>
         <br>Tanggal KK Terbit : <b><?php echo $d['tgl_kk']; ?></b>
         <br>
         <select name="val_kk" class="form-control" required>
