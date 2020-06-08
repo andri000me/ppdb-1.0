@@ -1,7 +1,7 @@
 <?php
 session_start();
-if ($_SESSION['status']!="siswa") {
-    header("location:../../login/mesin/index.php?pesan=belum_login");
+if ($_SESSION['status']!="siswa" && $_SESSION['status']!="admin") {
+    header("location:../../login/akl/index.php?pesan=belum_login");
 }
 ?>
 <!DOCTYPE html>
