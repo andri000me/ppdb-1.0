@@ -51,6 +51,10 @@
       <td><?php echo $d['tahun_lulus']; ?></td>
     </tr>
     <tr>
+      <td>No WA</td>
+      <td><?php echo $d['no_hp']; ?></td>
+    </tr>
+    <tr>
       <td>NIK</td>
       <td><?php echo $d['nik']; ?></td>
     </tr>
