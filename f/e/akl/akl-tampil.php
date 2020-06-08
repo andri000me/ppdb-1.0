@@ -5,7 +5,7 @@
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-warning btn-md" href="edit-siswa.php?id=<?php echo $d['id']; ?>"> Edit</a>
     </td>
     <td>
-      <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="../../../siswa/akl/cetak-akl.php?id=<?php echo $d['id']; ?>">Cetak PDF</a>
+      <a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="../../../siswa/akl/cetak-akl-1.php?id=<?php echo $d['id']; ?>">Cetak PDF</a>
     </td>
   </tr>
 </table>
