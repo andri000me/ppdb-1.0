@@ -24,6 +24,7 @@ if ($_POST['upload']) {
         } else {
             echo 'pdf_skhun';
             echo 'UKURAN FILE TERLALU BESAR';
+            exit;
         }
     } else {
         echo 'File SKHUN tidak pdf';
@@ -51,6 +52,7 @@ if ($_POST['upload']) {
               echo 'pdf_surat_dokter';
               echo "<br>";
               echo 'UKURAN FILE TERLALU BESAR';
+              exit;
           }
       } else {
           echo 'pdf_surat_dokter';
@@ -77,6 +79,7 @@ if ($_POST['upload']) {
             } else {
                 echo 'pdf_kk';
                 echo 'UKURAN FILE TERLALU BESAR';
+                exit;
             }
         } else {
             echo 'pdf_kk';
@@ -102,6 +105,7 @@ if ($_POST['upload']) {
               } else {
                   echo 'pdf_akta';
                   echo 'UKURAN FILE TERLALU BESAR';
+                  exit;
               }
           } else {
               echo 'pdf_akta';
@@ -127,6 +131,7 @@ if ($_POST['upload']) {
           } else {
               echo 'pdf_photo';
               echo 'UKURAN FILE TERLALU BESAR';
+              exit;
           }
       } else {
           echo 'pdf_photo';
@@ -152,6 +157,7 @@ if ($_POST['upload']) {
             } else {
                 echo 'pdf_swa_kk';
                 echo 'UKURAN FILE TERLALU BESAR';
+                exit;
             }
         } else {
             echo 'pdf_swa_kk';
@@ -177,6 +183,7 @@ if ($_POST['upload']) {
               } else {
                   echo 'pdf_piagam1';
                   echo 'UKURAN FILE TERLALU BESAR';
+                  exit;
               }
           } else {
               echo 'pdf_piagam1';
@@ -203,6 +210,7 @@ if ($_POST['upload']) {
                 } else {
                     echo 'pdf_piagam2';
                     echo 'UKURAN FILE TERLALU BESAR';
+                    exit;
                 }
             } else {
                 echo 'pdf_piagam2';
@@ -228,6 +236,7 @@ if ($_POST['upload']) {
                   } else {
                       echo 'pdf_piagam3';
                       echo 'UKURAN FILE TERLALU BESAR';
+                      exit;
                   }
               } else {
                   echo 'pdf_piagam3';
