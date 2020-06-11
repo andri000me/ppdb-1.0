@@ -56,7 +56,7 @@ if ($_SESSION['status']!="rpl") {
   <tbody>
     <?php
       include '../../../koneksi.php';
-    $halperpage = 50;
+    $halperpage = 500;
     $page = isset($_GET["halaman"]) ? (int)$_GET["halaman"] : 1;
     $mulai = ($page>1) ? ($page * $halperpage) - $halperpage : 0;
     $result = mysqli_query($koneksi, "SELECT no_p,
