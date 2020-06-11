@@ -52,7 +52,7 @@ if ($_SESSION['status']!="admin") {
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Tanggal Pendaftaran :</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="tgl_pendfataran" value="">
+        <input type="text" class="form-control" name="tgl_pendfataran" value="<?php echo date('d-m-Y'); ?>">
       </div>
     </div>
     <div class="form-group">

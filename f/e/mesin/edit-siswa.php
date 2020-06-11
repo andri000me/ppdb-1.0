@@ -52,7 +52,9 @@ if ($_SESSION['status']!="admin") {
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Tanggal Pendaftaran :</label>
       <div class="col-sm-6">
-        <input type="text" class="form-control" name="tgl_pendfataran" value="">
+        <!-- <input type="text" class="form-control" name="tgl_pendfataran" value=""> -->
+        <input type="text" class="form-control" name="tgl_pendfataran" value="<?php echo date('d-m-Y'); ?>">
+
       </div>
     </div>
     <div class="form-group">
@@ -119,8 +121,9 @@ if ($_SESSION['status']!="admin") {
     </div>
     <div class="form-group">
       <label class="control-label col-sm-2" for="email">Jenis Kelamin :</label>
-      <div class="col-sm-2">
+      <div class="col-sm-5">
         <select name="jenis_kelamin" class="form-control" >
+          <option value="<?php echo $d['jenis_kelamin']; ?>">Pilihan Awal (<?php echo $d['jenis_kelamin'] ?>)</option>
               <option value="laki-laki">Laki-laki</option>
               <option value="perempuan">Perempuan</option>
             </select>
