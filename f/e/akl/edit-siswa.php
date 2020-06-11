@@ -122,6 +122,7 @@ if ($_SESSION['status']!="admin") {
       <label class="control-label col-sm-2" for="email">Jenis Kelamin :</label>
       <div class="col-sm-2">
         <select name="jenis_kelamin" class="form-control" >
+          <option value="<?php echo $d['jenis_kelamin']; ?>">Pilihan Awal (<?php echo $d['jenis_kelamin'] ?>)</option>
               <option value="laki-laki">Laki-laki</option>
               <option value="perempuan">Perempuan</option>
             </select>
