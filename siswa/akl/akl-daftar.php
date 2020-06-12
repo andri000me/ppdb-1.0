@@ -221,7 +221,7 @@
           <?php
           $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
           // $akl_semua_cek = mysqli_num_rows($akl_semua);
-          echo $diagram_periksa_cek - $sudah_seleksi;
+          echo $sudah_seleksi - $diagram_periksa_cek;
           ?>
           ],
           backgroundColor: [
