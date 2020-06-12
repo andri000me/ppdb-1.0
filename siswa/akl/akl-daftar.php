@@ -210,6 +210,7 @@
           //sudah seleksi
           $diagram_semua_cek = mysqli_num_rows($diagram_semua);
           $diagram_blm_cek = mysqli_num_rows($diagram_blm);
+          $sudah_seleksi = $diagram_semua_cek - $diagram_blm_cek;
           echo $diagram_semua_cek - $diagram_blm_cek;
           ?>,
           <?php
@@ -220,7 +221,7 @@
           <?php
           $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
           // $akl_semua_cek = mysqli_num_rows($akl_semua);
-          echo $diagram_semua_cek - $diagram_periksa_cek;
+          echo $diagram_periksa_cek - $sudah_seleksi;
           ?>
           ],
           backgroundColor: [
