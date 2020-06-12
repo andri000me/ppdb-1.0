@@ -191,8 +191,8 @@
         labels: ["Siswa Bisa Seleksi",
         "Siswa Belum Seleksi",
         "Siswa Sudah Seleksi",
-        "Siswa Sudah Diperikasa",
-        "Belum Diperiksa"],
+        "Data Sudah Diperikasa",
+        "Data Belum Diperiksa"],
         datasets: [{
           label: '',
           data: [
