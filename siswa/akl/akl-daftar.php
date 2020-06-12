@@ -10,6 +10,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../../js/jquery-latest.js"></script>
   <script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="../0-chartjs/Chart.js"></script>
+
 </head>
 
 <body>
@@ -39,6 +41,10 @@
       <div class="col-md-3">
         <center><img style="margin-bottom:  80px; margin-top:  25px;" class="img-fluid" alt="Bootstrap Image Preview" src="../../images/logo-smkn1.png" />
       </div>
+    </div>
+
+    <div style="width: 70%;margin: 0px auto;">
+      <canvas id="myChart"></canvas>
     </div>
 
     <div class='alert alert-danger' role='alert'>
@@ -177,6 +183,73 @@
         }
       }
     }
+
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ["Siswa Bisa Seleksi",
+        "Siswa Belum Seleksi",
+        "Siswa Sudah Seleksi",
+        "Siswa Sudah Diperikasa",
+        "Belum Diperiksa"],
+        datasets: [{
+          label: '',
+          data: [
+          <?php
+          //seluruh siswa
+          $diagram_semua = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_akl ");
+          echo mysqli_num_rows($diagram_semua);
+          ?>,
+          <?php
+          //siswa belum seleksi
+          $diagram_blm = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_akl WHERE tgl_pendaftaran = ''");
+          echo mysqli_num_rows($diagram_blm);
+          ?>,
+          <?php
+          //sudah seleksi
+          $diagram_semua_cek = mysqli_num_rows($diagram_semua);
+          $diagram_blm_cek = mysqli_num_rows($diagram_blm);
+          echo $diagram_semua_cek - $diagram_blm_cek;
+          ?>,
+          <?php
+          //siswa sudah seleksi
+          $diagram_periksa = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_akl WHERE kondisi = ''");
+          echo mysqli_num_rows($diagram_periksa);
+          ?>,
+          <?php
+          $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
+          // $akl_semua_cek = mysqli_num_rows($akl_semua);
+          echo $diagram_semua_cek - $diagram_periksa_cek;
+          ?>
+          ],
+          backgroundColor: [
+          'rgba(0, 101, 153, 1.00)',
+          'rgba(125, 106, 172, 1.00)',
+          'rgba(255, 127, 66, 1.00)',
+          'rgba(248, 161, 28, 1.00)',
+          'rgba(73, 179, 165, 1.00)',
+          'rgba(133, 198, 202, 1.00)',
+          ],
+          borderColor: [
+          'rgba(0, 101, 153, 1.00)',
+          'rgba(125, 106, 172, 1.00)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero:true
+            }
+          }]
+        }
+      }
+    });
   </script>
 </body>
 
