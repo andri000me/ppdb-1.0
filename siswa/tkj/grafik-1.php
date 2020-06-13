@@ -206,12 +206,12 @@
           data: [
           <?php
           //seluruh siswa
-          $diagram_semua = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkr ");
+          $diagram_semua = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkj ");
           echo mysqli_num_rows($diagram_semua);
           ?>,
           <?php
           //siswa belum seleksi
-          $diagram_blm = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkr WHERE tgl_pendaftaran = ''");
+          $diagram_blm = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkj WHERE tgl_pendaftaran = ''");
           echo mysqli_num_rows($diagram_blm);
           ?>,
           <?php
@@ -223,7 +223,7 @@
           ?>,
           <?php
           //siswa sudah seleksi
-          $diagram_periksa = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkr WHERE kondisi = ''");
+          $diagram_periksa = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkj WHERE kondisi = ''");
           echo mysqli_num_rows($diagram_periksa);
           ?>,
           <?php
