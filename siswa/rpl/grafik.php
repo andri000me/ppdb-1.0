@@ -224,7 +224,8 @@
           <?php
           //siswa di periksa
           $diagram_periksa = mysqli_query($koneksi, "SELECT ISNULL(`kondisi`) FROM `f_siswa_rpl` ");
-          echo mysqli_num_rows($diagram_periksa);
+          $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
+          echo $diagram_semua_cek - $diagram_periksa_cek;
           ?>,
           <?php
           $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
