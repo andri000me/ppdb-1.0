@@ -43,13 +43,13 @@
       </div>
     </div>
 
-    <div style="position: relative; height:80vh; width:80vw; margin: auto;">
+    <!-- <div style="position: relative; height:80vh; width:80vw; margin: auto;">
       <canvas id="myChart"></canvas>
-    </div>
-
-    <!-- <div style="height: 500px !important; margin:auto; ">
-        <canvas width="600" height="250" id="myChart"></canvas>
     </div> -->
+
+    <div style="height: 500px !important; margin:auto; ">
+        <canvas width="600" height="250" id="myChart"></canvas>
+    </div>
 
     <div class='alert alert-danger' role='alert'>
       <center>Maaf jika nama pendaftar belum muncul tolong di cek kembali 1 sampai 2 hari :)
