@@ -222,8 +222,8 @@
           echo $diagram_semua_cek - $diagram_blm_cek;
           ?>,
           <?php
-          //siswa sudah seleksi
-          $diagram_periksa = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_rpl WHERE kondisi = ''");
+          //siswa di periksa
+          $diagram_periksa = mysqli_query($koneksi, "SELECT ISNULL(`kondisi`) FROM `f_siswa_rpl` ");
           echo mysqli_num_rows($diagram_periksa);
           ?>,
           <?php
