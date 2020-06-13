@@ -225,7 +225,7 @@
             //siswa sudah seleksi
             $diagram_periksa = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_rpl WHERE kondisi = ''");
             $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
-            $diagram_semua_cek - $diagram_periksa_cek;
+            echo $diagram_semua_cek - $diagram_periksa_cek;
             ?>,
             <?php
             $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
