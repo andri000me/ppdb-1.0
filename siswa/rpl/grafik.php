@@ -228,7 +228,7 @@
             echo $diagram_semua_cek - $diagram_periksa_cek;
             ?>,
             <?php
-            echo($diagram_semua_cek + $diagram_blm_cek) - ($diagram_semua_cek + $diagram_periksa_cek) ;
+            echo($diagram_semua_cek + $diagram_periksa_cek) - ($diagram_semua_cek + $diagram_blm_cek);
             ?>
           ],
           backgroundColor: [
