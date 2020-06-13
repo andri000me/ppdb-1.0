@@ -220,15 +220,11 @@
             $diagram_blm_cek = mysqli_num_rows($diagram_blm);
             $sudah_seleksi = $diagram_semua_cek - $diagram_blm_cek;
             echo $diagram_semua_cek - $diagram_blm_cek;
-
-          
             ?>,
             <?php
             //siswa sudah seleksi
             $diagram_periksa = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_rpl WHERE kondisi = ''");
             echo mysqli_num_rows($diagram_periksa);
-            echo $diagram_semua_cek - $diagram_blm_cek;
-
             ?>,
             <?php
             $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
