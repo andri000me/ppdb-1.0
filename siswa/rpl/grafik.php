@@ -216,15 +216,12 @@
             ?>,
             <?php
             //sudah seleksi
-            // $diagram_semua_cek = mysqli_num_rows($diagram_semua);
-            // $diagram_blm_cek = mysqli_num_rows($diagram_blm);
-            // $sudah_seleksi = $diagram_semua_cek - $diagram_blm_cek;
-            // echo $diagram_semua_cek - $diagram_blm_cek;
-
             $diagram_semua_cek = mysqli_num_rows($diagram_semua);
             $diagram_blm_cek = mysqli_num_rows($diagram_blm);
             $sudah_seleksi = $diagram_semua_cek - $diagram_blm_cek;
             echo $diagram_semua_cek - $diagram_blm_cek;
+
+          
             ?>,
             <?php
             //siswa sudah seleksi
