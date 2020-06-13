@@ -226,6 +226,7 @@
           // $diagram_periksa = mysqli_query($koneksi, "SELECT kondisi FROM f_siswa_tkr WHERE kondisi = '' and tgl_pendaftaran ='' ");
           $diagram_periksa = mysqli_query($koneksi, "SELECT kondisi, tgl_pendaftaran
             FROM f_siswa_tkr WHERE kondisi = '' and tgl_pendaftaran IS NOT null and tgl_pendaftaran !=''");
+            $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
 
           echo $sudah_seleksi - $diagram_periksa_cek;
           // echo mysqli_num_rows($diagram_periksa);
