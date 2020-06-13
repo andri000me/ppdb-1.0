@@ -232,9 +232,6 @@
           // echo mysqli_num_rows($diagram_periksa);
           ?>,
           <?php
-          $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
-          // $akl_semua_cek = mysqli_num_rows($akl_semua);
-          // echo $sudah_seleksi - $diagram_periksa_cek;
           echo mysqli_num_rows($diagram_periksa);
 
           ?>
