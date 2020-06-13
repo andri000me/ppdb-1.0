@@ -43,9 +43,17 @@
       </div>
     </div>
 
-    <div style="width: 800px;margin: 0px auto;">
+    <!-- <div style="position: relative; height:80vh; width:80vw; margin: auto;">
       <canvas id="myChart"></canvas>
-    </div>
+    </div> -->
+
+    <!-- <div style="height: 500px !important; margin:auto; ">
+        <canvas width="600" height="250" id="myChart"></canvas>
+    </div> -->
+
+    <div style="width: 800px;margin: 0px auto;">
+	<canvas id="myChart"></canvas>
+</div>
 
     <div class='alert alert-danger' role='alert'>
       <center>Maaf jika nama pendaftar belum muncul tolong di cek kembali 1 sampai 2 hari :)
@@ -190,42 +198,55 @@
       data: {
         labels: ["Siswa Bisa Seleksi",
         "Siswa Belum Seleksi",
-        "Data Sudah di Periksa",
-        "siswa blm seleksi"],
+        "Siswa Sudah Seleksi",
+        "Data Sudah Diperikasa",
+        "Data Belum Diperiksa"],
         datasets: [{
           label: '',
           data: [
           <?php
-          $akl_semua = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_akl ");
-          echo mysqli_num_rows($akl_semua);
+          //seluruh siswa
+          $diagram_semua = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_akl ");
+          echo mysqli_num_rows($diagram_semua);
           ?>,
           <?php
-          $akl_blm = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_akl WHERE tgl_pendaftaran = ''");
-          echo mysqli_num_rows($akl_blm);
+          //siswa belum seleksi
+          $diagram_blm = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_akl WHERE tgl_pendaftaran = ''");
+          echo mysqli_num_rows($diagram_blm);
           ?>,
           <?php
-          $akl_cek = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_akl WHERE kondisi = ''");
-          echo mysqli_num_rows($akl_cek);
+          //sudah seleksi
+          $diagram_semua_cek = mysqli_num_rows($diagram_semua);
+          $diagram_blm_cek = mysqli_num_rows($diagram_blm);
+          $sudah_seleksi = $diagram_semua_cek - $diagram_blm_cek;
+          echo $diagram_semua_cek - $diagram_blm_cek;
           ?>,
           <?php
-          $akl_semua_cek = mysqli_num_rows($akl_semua);
-          $akl_blm_cek = mysqli_num_rows($akl_blm);
-          echo $akl_semua_cek - $akl_blm_cek;
+          //siswa sudah seleksi
+          $diagram_periksa = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_akl WHERE kondisi = ''");
+          echo mysqli_num_rows($diagram_periksa);
+          ?>,
+          <?php
+          $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
+          // $akl_semua_cek = mysqli_num_rows($akl_semua);
+          echo $sudah_seleksi - $diagram_periksa_cek;
           ?>
           ],
           backgroundColor: [
           'rgba(0, 101, 153, 1.00)',
           'rgba(125, 106, 172, 1.00)',
+          'rgba(133, 198, 202, 1.00)',
           'rgba(255, 127, 66, 1.00)',
           'rgba(248, 161, 28, 1.00)',
           'rgba(73, 179, 165, 1.00)',
-          'rgba(133, 198, 202, 1.00)',
           ],
           borderColor: [
-          'rgba(0, 101, 153, 1.00)',
-          'rgba(125, 106, 172, 1.00)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)'
+            'rgba(0, 101, 153, 1.00)',
+            'rgba(125, 106, 172, 1.00)',
+            'rgba(133, 198, 202, 1.00)',
+            'rgba(255, 127, 66, 1.00)',
+            'rgba(248, 161, 28, 1.00)',
+            'rgba(73, 179, 165, 1.00)',
           ],
           borderWidth: 1
         }]
