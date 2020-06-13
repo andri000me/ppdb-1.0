@@ -34,7 +34,7 @@
           <h5><b>Tahun Pelajaran 2020/2021</b></h4>
         </center>
         <center>
-          <h4><b>Program Studi Teknik Komputer Jaringan</b></h4>
+          <h4><b>Program Studi Teknik Kendaraan Ringan Otomotif</b></h4>
         </center><br>
         <!-- font ganti jenis -->
       </div>
@@ -107,7 +107,7 @@
       $pages = ceil($total/$halperpage);
 
       $data = mysqli_query($koneksi, "SELECT no_p,tgl_pendaftaran,nisn,nama_siswa,kompetensi_keahlian,asal_sekolah,kondisi,id
-        from f_siswa_tkr where kompetensi_keahlian in ('Teknik Komputer dan Jaringan') LIMIT $mulai, $halperpage ");
+        from f_siswa_tkr where kompetensi_keahlian in ('Teknik Kendaraan Ringan Otomotif') LIMIT $mulai, $halperpage ");
       $no = $mulai+1;
 
 
@@ -204,33 +204,36 @@
         datasets: [{
           label: '',
           data: [
-          <?php
-          //seluruh siswa
-          $diagram_semua = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkr ");
-          echo mysqli_num_rows($diagram_semua);
-          ?>,
-          <?php
-          //siswa belum seleksi
-          $diagram_blm = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkr WHERE tgl_pendaftaran = ''");
-          echo mysqli_num_rows($diagram_blm);
-          ?>,
-          <?php
-          //sudah seleksi
-          $diagram_semua_cek = mysqli_num_rows($diagram_semua);
-          $diagram_blm_cek = mysqli_num_rows($diagram_blm);
-          $sudah_seleksi = $diagram_semua_cek - $diagram_blm_cek;
-          echo $diagram_semua_cek - $diagram_blm_cek;
-          ?>,
-          <?php
-          //siswa sudah seleksi
-          $diagram_periksa = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkr WHERE kondisi = ''");
-          echo mysqli_num_rows($diagram_periksa);
-          ?>,
-          <?php
-          $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
-          // $akl_semua_cek = mysqli_num_rows($akl_semua);
-          echo $sudah_seleksi - $diagram_periksa_cek;
-          ?>
+            <?php
+            //seluruh siswa
+            $diagram_semua = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkr ");
+            echo mysqli_num_rows($diagram_semua);
+            ?>,
+            <?php
+            //siswa belum seleksi
+            $diagram_blm = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkr WHERE tgl_pendaftaran = ''");
+            echo mysqli_num_rows($diagram_blm);
+            ?>,
+            <?php
+            //siswa sudah seleksi
+
+            $diagram_periksa = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkr WHERE kondisi = ''");
+            echo mysqli_num_rows($diagram_periksa);
+            ?>,
+            <?php
+
+            //sudah seleksi
+            $diagram_semua_cek = mysqli_num_rows($diagram_semua);
+            $diagram_blm_cek = mysqli_num_rows($diagram_blm);
+            $sudah_seleksi = $diagram_semua_cek - $diagram_blm_cek;
+            echo $diagram_semua_cek - $diagram_blm_cek;
+            ?>,
+            <?php
+            $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
+            // echo $sudah_seleksi - $diagram_periksa_cek;
+            echo $diagram_periksa_cek - $sudah_seleksi;
+
+            ?>
           ],
           backgroundColor: [
           'rgba(0, 101, 153, 1.00)',
