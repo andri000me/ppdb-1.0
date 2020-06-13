@@ -223,7 +223,7 @@
           ?>,
           <?php
           //siswa sudah seleksi
-          $diagram_periksa = mysqli_query($koneksi, "SELECT tgl_pendaftaran FROM f_siswa_tkr WHERE kondisi = ''");
+          $diagram_periksa = mysqli_query($koneksi, "SELECT kondisi FROM f_siswa_tkr WHERE kondisi = ''");
           echo mysqli_num_rows($diagram_periksa);
           ?>,
           <?php
