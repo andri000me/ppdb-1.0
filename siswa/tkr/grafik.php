@@ -230,7 +230,9 @@
             ?>,
             <?php
             $diagram_periksa_cek = mysqli_num_rows($diagram_periksa);
-            echo $sudah_seleksi - $diagram_periksa_cek;
+            // echo $sudah_seleksi - $diagram_periksa_cek;
+            echo $diagram_periksa_cek - $sudah_seleksi;
+
             ?>
           ],
           backgroundColor: [
