@@ -90,9 +90,9 @@
             <center>Asal Sekolah
           </th>
           <!-- Data di buka bos :) -->
-          <!-- <th>
+          <th>
             <center>Lolos Seleksi
-          </th> -->
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -134,9 +134,9 @@
             <center><?php echo $d['asal_sekolah']; ?>
           </td>
           <!-- Data di buka bos :) -->
-          <!-- <td>
+          <td>
             <center><?php echo $d['kondisi']; ?>
-          </td> -->
+          </td>
         </tr>
 
         <?php
