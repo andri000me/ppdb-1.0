@@ -1,8 +1,8 @@
 <?php
-session_start();
-if ($_SESSION['status']!="admin") {
-    header("location:../../index.php?pesan=belum_login");
-}
+// session_start();
+// if ($_SESSION['status']!="admin") {
+//     header("location:../../index.php?pesan=belum_login");
+// }
 ?>
 <?php ob_start(); ?>
 <!DOCTYPE html>
