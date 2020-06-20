@@ -34,7 +34,7 @@
 			<h2>Oops! Page Not Be Found</h2>
 			<h2>Mohon Maaf Seleksi Administrasi Sudah di Tutup</h2>
 			<p>Bagi calon siswa yang belum melakukan Seleksi Adminsitrasi dinyatakan Gugur Pendaftaran</p>
-			<a href="ppdb.smkn1kragilan.sch.id">Kembali ke Web PPDB SMK Negeri 1 Kragilan</a>
+			<a href="https://ppdb.smkn1kragilan.sch.id">Kembali ke Web PPDB SMK Negeri 1 Kragilan</a>
 		</div>
 	</div>
 
