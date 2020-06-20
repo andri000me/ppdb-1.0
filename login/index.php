@@ -1,2 +1,2 @@
 <?php
-header("location:https://ppdb.smkn1kragilan.sch.id");
+header('Location: 404/index.php');
