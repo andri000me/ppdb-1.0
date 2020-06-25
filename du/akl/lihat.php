@@ -56,6 +56,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
       photo_fakta,
       tgl_daftar_ulang,
       kondisi,
+      catatan,
       no_pendaftaran
        from daftar_ulang where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
