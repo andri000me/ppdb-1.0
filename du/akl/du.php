@@ -135,7 +135,9 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
             </tr>
             <tr>
               <td>Photo Fakta Integritas</td>
-              <input type="file" name="fakta" accept="application/pdf" class="form-control-file" id="swa_fakta">
+              <td>
+                <input type="file" name="fakta" accept="application/pdf" class="form-control-file" id="swa_fakta">
+              </td>
             </tr>
 
     </table><br>
