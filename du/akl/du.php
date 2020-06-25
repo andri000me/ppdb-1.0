@@ -77,7 +77,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
           </tr>
         </table>
 
-        <form class="form-horizontal" action="update.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
+        <form class="form-horizontal" action="upload.php" name="input" method="POST" enctype="multipart/form-data" onSubmit="return validasi()">
           <table class="table table-bordered">
 
             <tr>
