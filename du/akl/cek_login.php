@@ -12,7 +12,7 @@ $nisn = addslashes(trim($_POST['nisn']));
 $nik = addslashes(trim($_POST['nik']));
 
 // menyeleksi data admin dengan nisn dan nik yang sesuai
-$data = mysqli_query($koneksi, "select * from f_siswa_akl where nisn='$nisn' and nik='$nik'");
+$data = mysqli_query($koneksi, "select * from daftar_ulang where nisn='$nisn' and nik='$nik'");
 
 // menghitung jumlah data yang ditemukan
 $cek = mysqli_num_rows($data);
