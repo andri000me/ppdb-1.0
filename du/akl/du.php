@@ -142,14 +142,14 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
                 <p>File Harus PDF dan Maksimal 500kb</p>
                 <input type="hidden" name="nik" value="<?php echo $d['nik']; ?>">
                 <input type="hidden" name="nisn" value="<?php echo $d['nisn']; ?>">
-                <input type="file" name="pdf_swa_fakta" accept="application/pdf" class="form-control-file" id="swa_fakta">
+                <input type="file" name="pdf_swa_fakta" accept="application/pdf" class="form-control-file" id="pdf_swa_fakta">
               </td>
             </tr>
             <tr>
               <td>Photo Fakta Integritas</td>
               <td>
                 <p>File Harus PDF dan Maksimal 500kb</p>
-                <input type="file" name="pdf_fakta" accept="application/pdf" class="form-control-file" id="swa_fakta">
+                <input type="file" name="pdf_fakta" accept="application/pdf" class="form-control-file" id="pdf_fakta">
               </td>
             </tr>
             <tr>
