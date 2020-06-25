@@ -57,7 +57,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
       kota,
       no_hp,
       nik,
-      pdf_swa_photo,
+      pdf_swa_fakta,
       pdf_fakta,
       tgl_daftar_ulang,
       kondisi,

@@ -60,7 +60,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
       kota,
       no_hp,
       nik,
-      pdf_swa_photo,
+      pdf_swa_fakta,
       pdf_fakta,
       tgl_daftar_ulang,
       kondisi,
@@ -68,6 +68,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
        from daftar_ulang where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           ?>
+
 
         <br><br><br>
         <table>
@@ -154,7 +155,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
             </tr>
             <tr>
               <td colspan="2">
-                <center><input type="submit" style="margin-top: 25px; " class="btn btn-success" name="upload" value="upload">Submit</center>
+                <center><input type="submit" style="margin-top: 25px; " class="btn btn-success" name="upload" value="upload"></center>
               </td>
             </tr>
         </form>

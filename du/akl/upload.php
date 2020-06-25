@@ -8,7 +8,6 @@ include '../../koneksi.php';
 $nik = $_POST['nik'];
 $nisn = $_POST['nisn'];
 
-echo "cek";
 // pdf_fakta
 if ($_POST['upload']) {
     $ekstensi_diperbolehkan = array('pdf');
@@ -24,13 +23,14 @@ if ($_POST['upload']) {
             move_uploaded_file($file_tmp, 'file/'.$nisn.'-'.$pdf_fakta_up.'.pdf');
         } else {
             echo 'pdf_fakta';
-            echo 'UKURAN FILE TERLALU BESAR';
+            echo '<br>';
+            echo ' UKURAN FILE TERLALU BESAR';
             exit;
         }
     } else {
         echo 'File SKHUN tidak pdf';
         echo "<br>";
-        echo 'EKSTENSI FILE YANG DI UPLOAD TIDAK DI PERBOLEHKAN';
+        echo ' EKSTENSI FILE YANG DI UPLOAD TIDAK DI PERBOLEHKAN';
         header("location:gagal-upload.php");
         exit;
     }
@@ -68,9 +68,10 @@ if ($_POST['upload']) {
 
 mysqli_query($koneksi, "UPDATE daftar_ulang SET
              pdf_swa_fakta='$nisn-$pdf_swa_fakta_up.pdf',
-             pdf_fakta='$nisn-$pdf_fakta_up.pdf',
+             pdf_fakta='$nisn-$pdf_fakta_up.pdf'
              where nik='$nik'
-             ");
+             ")
+             or die(mysqli_error($koneksi));
 
 
 
