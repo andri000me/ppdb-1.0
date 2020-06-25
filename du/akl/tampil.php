@@ -2,7 +2,7 @@
 <table>
   <tr>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="logout.php">Keluar</a></td>
-    <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-warning btn-md" href="edit-siswa.php?id=<?php echo $d['id']; ?>">Cetak Formulir</a></td>
+    <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-warning btn-md" href="cetak-form.php?nik=<?php echo $d['nik'] ?>">Cetak Formulir</a></td>
     <td><a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="../../../siswa/akl/cetak-akl.php?id=<?php echo $d['id']; ?>">Input Daftar Ulang</a></td>
   </tr>
 </table>
