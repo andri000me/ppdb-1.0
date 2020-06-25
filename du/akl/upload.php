@@ -8,9 +8,10 @@ include '../../koneksi.php';
 $nik = $_POST['nik'];
 $nisn = $_POST['nisn'];
 
+echo "cek";
 // pdf_fakta
 if ($_POST['upload']) {
-    $ekstensi_diperbolehkan    = array('pdf');
+    $ekstensi_diperbolehkan = array('pdf');
     $waktu = date('d-m-Y');
     $pdf_fakta_up = "pdf_fakta";
     $pdf_fakta = $_FILES['pdf_fakta']['name'];
