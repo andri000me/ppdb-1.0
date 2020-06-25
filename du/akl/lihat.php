@@ -11,9 +11,9 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
   <title>PPDB SMKN 1 Kragilan</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/bootstrap.min.css">
 
-  <script src="../../../js/bootstrap.min.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -35,7 +35,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
 
   <table class="table table-bordered">
     <?php
-      include '../../../koneksi.php';
+      include '../../koneksi.php';
       $nik = isset($_GET['nik']) ? abs((int) $_GET['nik']) : 0;
       $data = mysqli_query($koneksi, "select
       id,
