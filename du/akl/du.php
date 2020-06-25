@@ -139,6 +139,11 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
                 <input type="file" name="fakta" accept="application/pdf" class="form-control-file" id="swa_fakta">
               </td>
             </tr>
+            <tr>
+              <td colspan="2">
+                <input type="submit" class="btn btn-default" name="submit" value="Submit">
+              </td>
+            </tr>
 
     </table><br>
     <?php
