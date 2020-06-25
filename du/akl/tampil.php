@@ -3,7 +3,7 @@
   <tr>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="logout.php">Keluar</a></td>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-warning btn-md" href="cetak-form.php?nik=<?php echo $d['nik'] ?>">Cetak Formulir</a></td>
-    <td><a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="../../../siswa/akl/cetak-akl.php?id=<?php echo $d['id']; ?>">Input Daftar Ulang</a></td>
+    <td><a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="du.php?nik=<?php echo $d['nik']; ?>">Input Daftar Ulang</a></td>
   </tr>
 </table>
 
@@ -12,6 +12,10 @@
   <tr>
     <td>Sudah Daftar Ulang?</td>
     <td><?php echo $d['no_pendaftaran']; ?></td>
+  </tr>
+  <tr>
+    <td>Catatan Operator</td>
+    <td><?php echo $d['catatan']; ?></td>
   </tr>
   <tr>
     <td>Nomor Pendaftaran</td>
@@ -67,9 +71,11 @@
   </tr>
   <tr>
     <td>Swa Photo Fakta Integritas</td>
-    <td>button</td>
+    <td>
+      <a href="" type="button" class="btn btn-info btn-md" name="button">Swa Photo Fakta Integritas</a>
+    </td>
   </tr>
   <tr>
-    <td>Photo Fakta Integritas</td>
-    <td>button</td>
+    <td>Fakta Integritas</td>
+    <a href="" type="button" class="btn btn-info btn-md" name="button">Fakta Integritas</a>
   </tr>
