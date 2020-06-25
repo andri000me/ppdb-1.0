@@ -64,7 +64,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
           <br><br><br>
           <table>
             <tr>
-              <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="lihat.php">Kembali</a></td>
+              <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="lihat.php?nik=<?php echo $d['nik']; ?>">Kembali</a></td>
               <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-warning btn-md" href="cetak-form.php?nik=<?php echo $d['nik'] ?>">Cetak Formulir</a></td>
             </tr>
           </table>
