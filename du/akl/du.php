@@ -64,9 +64,8 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
           <br><br><br>
           <table>
             <tr>
-              <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="logout.php">Keluar</a></td>
+              <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="lihat.php">Kembali</a></td>
               <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-warning btn-md" href="cetak-form.php?nik=<?php echo $d['nik'] ?>">Cetak Formulir</a></td>
-              <td><a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="../../../siswa/akl/cetak-akl.php?id=<?php echo $d['id']; ?>">Input Daftar Ulang</a></td>
             </tr>
           </table>
 
@@ -130,11 +129,13 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
             </tr>
             <tr>
               <td>Swa Photo Fakta Integritas</td>
-              <td>button</td>
+              <td>
+                <input type="file" name="swa_fakta" accept="application/pdf" class="form-control-file" id="swa_fakta">
+              </td>
             </tr>
             <tr>
               <td>Photo Fakta Integritas</td>
-              <td>button</td>
+              <input type="file" name="fakta" accept="application/pdf" class="form-control-file" id="swa_fakta">
             </tr>
 
     </table><br>
