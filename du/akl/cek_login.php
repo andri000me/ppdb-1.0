@@ -24,8 +24,8 @@ if ($cek > 0) {
 
     if ($login['kompetensi_keahlian']=="Akuntansi dan Keuangan Lembaga") {
         $_SESSION['nisn'] = $nisn;
-        $_SESSION['status'] = "siswa";
-        header("location:../../siswa/akl/edit-siswa.php?nik=$nik");
+        $_SESSION['status'] = "akl";
+        header("location:lihat.php?nik=$nik");
         // $_SESSION['status'] = "Teknik Komputer Jaringan";
         // echo "cek 1";
     } else {

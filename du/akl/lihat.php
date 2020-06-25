@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['status']!="admin" && $_SESSION['status']!="Akuntansi dan Keuangan Lembaga") {
+if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
     header("location:index.php?pesan=belum_login");
 }
 ?>
@@ -36,11 +36,28 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="Akuntansi dan Keuangan
   <table class="table table-bordered">
     <?php
       include '../../../koneksi.php';
-      $id = $_GET['id'];
+      $nik = isset($_GET['nik']) ? abs((int) $_GET['nik']) : 0;
       $data = mysqli_query($koneksi, "select
-
-      id
-       from daftar_ulang where id='$id'");
+      id,
+      nisn,
+      nama,
+      kompetensi_keahlian,
+      asal_sekolah,
+      npsn_sekolah,
+      alamat,
+      rt,
+      rw,
+      kelurahan,
+      kecamatan,
+      kota,
+      no_hp,
+      nik,
+      swa_photo,
+      photo_fata,
+      tgl_daftar_ulang,
+      kondis,
+      no_pendaftaran
+       from daftar_ulang where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           include('tampil.php'); ?>
 
