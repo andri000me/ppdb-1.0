@@ -68,8 +68,6 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
 
 
         <table class="table table-bordered">
-
-
           <tr>
             <td>Nama Siswa</td>
             <td><?php echo $d['nama']; ?></td>
@@ -111,18 +109,19 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
             <td><?php echo $d['no_hp']; ?></td>
           </tr>
           <tr>
-
-            <h5>
-              <center>MENYATAKAN</center>
-            </h5>
-            <ul>
-              <li>Bahwa saya akan bertakwa kepada Tuhan Yang Maha Esa.</li>
-              <li>Bahwa saya akan mematuhi dan mentaati peraturan dan tata tertib sekolah.</li>
-              <li>Bahwa saya akan menghormati, ta’at dan patuh terhadap Guru dan Orang Tua.</li>
-              <li>Bahwa saya akan belajar dengan rajin dan sungguh-sungguh.</li>
-              <li>Apabila dikemudian hari terbukti pernyataan saya tersebut tidak ditepati, maka saya bersedia dikenakan sanksi/hukuman menurut ketentuan peraturan yang berlaku.</li>
-            </ul>
-            <p>Demikian surat pernyataan ini saya buat dalam keadaan sadar, tanpa paksaan, dan dibuat dengan sebenar-benarnya</p>
+            <td colspan="2">
+              <h5>
+                <center>MENYATAKAN</center>
+              </h5>
+              <ol>
+                <li>Bahwa saya akan bertakwa kepada Tuhan Yang Maha Esa.</li>
+                <li>Bahwa saya akan mematuhi dan mentaati peraturan dan tata tertib sekolah.</li>
+                <li>Bahwa saya akan menghormati, ta’at dan patuh terhadap Guru dan Orang Tua.</li>
+                <li>Bahwa saya akan belajar dengan rajin dan sungguh-sungguh.</li>
+                <li>Apabila dikemudian hari terbukti pernyataan saya tersebut tidak ditepati, maka saya bersedia dikenakan sanksi/hukuman menurut ketentuan peraturan yang berlaku.</li>
+              </ol>
+              <p>Demikian surat pernyataan ini saya buat dalam keadaan sadar, tanpa paksaan, dan dibuat dengan sebenar-benarnya</p>
+            </td>
           </tr>
 
         </table>
@@ -138,6 +137,9 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
   </div>
   </div>
 
+  <script>
+      window.print();
+    </script>
 </body>
 
 </html>
