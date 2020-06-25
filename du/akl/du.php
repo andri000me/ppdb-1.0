@@ -141,7 +141,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
             </tr>
             <tr>
               <td colspan="2">
-                <input type="submit" class="btn btn-default" name="submit" value="Submit">
+              <center><input type="submit" class="btn btn-success" name="submit" value="Submit"></center>
               </td>
             </tr>
 
