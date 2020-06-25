@@ -72,10 +72,12 @@
   <tr>
     <td>Swa Photo Fakta Integritas</td>
     <td>
-      <a href="" type="button" class="btn btn-info btn-md" name="button">Swa Photo Fakta Integritas</a>
+      <a href="" type="button" class="btn btn-primary btn-md" name="button">Swa Photo Fakta Integritas</a>
     </td>
   </tr>
   <tr>
     <td>Fakta Integritas</td>
-    <a href="" type="button" class="btn btn-info btn-md" name="button">Fakta Integritas</a>
+    <td>
+      <a href="" type="button" class="btn btn-primary btn-md" name="button">Fakta Integritas</a>
+    </td>
   </tr>
