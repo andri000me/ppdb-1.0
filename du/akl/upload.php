@@ -1,7 +1,7 @@
 <?php
 session_start();
-if ($_SESSION['status']!="akl") {
-    header("location:../../login/akl/index.php?pesan=belum_login");
+if ($_SESSION['status']!="siswa-akl") {
+    header("location:index.php?pesan=belum_login");
 }
 
 include '../../koneksi.php';
