@@ -81,7 +81,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
             <td><?php echo $d['asal_sekolah']; ?></td>
           </tr>
           <tr>
-            <td>alamat</td>
+            <td>Alamat</td>
             <td><?php echo $d['alamat']; ?></td>
           </tr>
           <tr>

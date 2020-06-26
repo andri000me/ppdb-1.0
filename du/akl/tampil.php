@@ -10,8 +10,8 @@
 <table class="table table-bordered">
 
   <tr>
-    <td>Sudah Daftar Ulang?</td>
-    <td><?php echo $d['no_pendaftaran']; ?></td>
+    <td>Tanggal Daftar Ulang</td>
+    <td><?php echo $d['tgl_daftar_ulang']; ?></td>
   </tr>
   <tr>
     <td>Catatan Operator</td>
@@ -38,7 +38,7 @@
     <td><?php echo $d['npsn_sekolah']; ?></td>
   </tr>
   <tr>
-    <td>alamat</td>
+    <td>Alamat</td>
     <td><?php echo $d['alamat']; ?></td>
   </tr>
   <tr>

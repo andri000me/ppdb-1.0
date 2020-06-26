@@ -94,7 +94,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
             <td><?php echo $d['npsn_sekolah']; ?></td>
           </tr>
           <tr>
-            <td>alamat</td>
+            <td>Alamat</td>
             <td><?php echo $d['alamat']; ?></td>
           </tr>
           <tr>

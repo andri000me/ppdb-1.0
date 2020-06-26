@@ -24,20 +24,17 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-2">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
           <center>
-            <h3>Daftar Ulang Peserta Didik</h3>
-          </center>
-          <center>
-            <h3>SMK Negeri 1 Kragilan</h3>
-          </center>
+            <h3>Daftar Ulang Peserta Didik SMK Negeri 1 Kragilan</h3>
+          </center>          
           <center>
             <h3>Kompetensi Keahlian Akuntansi Keuangan Lembaga</h3>
           </center>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
         </div>
       </div>
 
@@ -106,7 +103,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
               <td><?php echo $d['npsn_sekolah']; ?></td>
             </tr>
             <tr>
-              <td>alamat</td>
+              <td>Alamat</td>
               <td><?php echo $d['alamat']; ?></td>
             </tr>
             <tr>
