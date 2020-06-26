@@ -31,7 +31,7 @@ if ($_POST['upload']) {
         echo 'File SKHUN tidak pdf';
         echo "<br>";
         echo ' EKSTENSI FILE YANG DI UPLOAD TIDAK DI PERBOLEHKAN';
-        header("location:gagal-upload.php");
+        // header("location:gagal-upload.php");
         exit;
     }
 }
@@ -67,6 +67,7 @@ if ($_POST['upload']) {
 // UPDATE `upload` SET `id_file`=[value-1],`nama_file`=[value-2] WHERE 1
 
 mysqli_query($koneksi, "UPDATE daftar_ulang SET
+             tgl_daftar_ulang='$waktu',
              pdf_swa_fakta='$nisn-$pdf_swa_fakta_up.pdf',
              pdf_fakta='$nisn-$pdf_fakta_up.pdf'
              where nik='$nik'
