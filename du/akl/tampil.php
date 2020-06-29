@@ -7,9 +7,14 @@
 $cek_fakta = $d['pdf_fakta'];
 if ($cek_fakta == '') {
     ?>
-    <td><a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="du.php?nik=<?php echo $d['nik']; ?>">Input Daftar Ulang</a></td>
+    <td><a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-warning btn-md" href="du.php?nik=<?php echo $d['nik']; ?>">Input Daftar Ulang</a></td>
 <?php
-} ?>
+} else {
+        ?>
+        <td><a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-success btn-md" href="cetak-daftar-ulang.php?nik=<?php echo $d['nik']; ?>">Cetak Bukti Daftar Ulang</a></td>
+
+  <?php
+    } ?>
   </tr>
 </table>
 
@@ -85,5 +90,29 @@ if ($cek_fakta == '') {
     <td>Fakta Integritas</td>
     <td>
       <a href="file/<?php echo $d['nik'] ?>-pdf_fakta.pdf" type="button" class="btn btn-primary btn-md" name="button">Fakta Integritas</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Akta Kelahiran</td>
+    <td>
+      <a href="file/<?php echo $d['nik'] ?>-pdf_akta.pdf" type="button" class="btn btn-primary btn-md" name="button">Akta Kelahiran</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Kartu Keluarga</td>
+    <td>
+      <a href="file/<?php echo $d['nik'] ?>-pdf_kk.pdf" type="button" class="btn btn-primary btn-md" name="button">Kartu Kelurga</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Photo Background Merah</td>
+    <td>
+      <a href="file/<?php echo $d['nik'] ?>-pdf_photo.pdf" type="button" class="btn btn-primary btn-md" name="button">Photo</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Surat Sehat dan Keterangan Buta Warna dari Puskesmas</td>
+    <td>
+      <a href="file/<?php echo $d['nik'] ?>-pdf_surat_dokter.pdf" type="button" class="btn btn-primary btn-md" name="button">Surat Sehat dan Buta Warna</a>
     </td>
   </tr>

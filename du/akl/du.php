@@ -64,14 +64,21 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
       no_pendaftaran
        from daftar_ulang where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
-          ?>
+          $cek_pdf_fakta = $d['pdf_fakta'];
+          $cek_nik = $d['nik'];
+          if (!empty($cek_pdf_fakta)) {
+              header("location:lihat.php?nik=$cek_nik");
+              // exit;
+          } else {
+              // echo "kosong";
+          } ?>
 
 
         <br><br><br>
         <table>
           <tr>
             <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="lihat.php?nik=<?php echo $d['nik']; ?>">Kembali</a></td>
-            <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-warning btn-md" href="cetak-form.php?nik=<?php echo $d['nik'] ?>">Cetak Formulir</a></td>
+            <!-- <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="cetak-form.php?nik=<?php echo $d['nik'] ?>">Cetak Formulir</a></td> -->
           </tr>
         </table>
 

@@ -192,4 +192,4 @@ mysqli_query($koneksi, "UPDATE daftar_ulang SET
 
 
 // node_id=<?php echo $d['node_id'];
- // header("location:cetak-akl.php?id=$id");
+header("location:cetak-daftar-ulang.php?nik=$nik");
