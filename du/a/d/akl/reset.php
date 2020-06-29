@@ -21,5 +21,5 @@ if ($_SESSION['status']!="akl") {
                ") or die(mysqli_error($koneksi));
     ;
 
-    // header("location:tampil.php?nik=$nik");
+    header("location:tampil.php?nik=$nik");
 }
