@@ -29,7 +29,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
         <div class="col-md-8">
           <center>
             <h3>Daftar Ulang Peserta Didik SMK Negeri 1 Kragilan</h3>
-          </center>          
+          </center>
           <center>
             <h3>Kompetensi Keahlian Akuntansi Keuangan Lembaga</h3>
           </center>
@@ -144,10 +144,38 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
               </td>
             </tr>
             <tr>
-              <td>Photo Fakta Integritas</td>
+              <td>Scan Fakta Integritas</td>
               <td>
                 <p>File Harus PDF dan Maksimal 500kb</p>
                 <input type="file" name="pdf_fakta" accept="application/pdf" class="form-control-file" id="pdf_fakta" required>
+              </td>
+            </tr>
+            <tr>
+              <td>Akta Asli</td>
+              <td>
+                <p>File Harus PDF dan Maksimal 500kb</p>
+                <input type="file" name="pdf_akta" accept="application/pdf" class="form-control-file" id="pdf_fakta" required>
+              </td>
+            </tr>
+            <tr>
+              <td>Kartu Keluarga Asli</td>
+              <td>
+                <p>File Harus PDF dan Maksimal 500kb</p>
+                <input type="file" name="pdf_kk" accept="application/pdf" class="form-control-file" id="pdf_fakta" required>
+              </td>
+            </tr>
+            <tr>
+              <td>Photo dengan Seragam Sekolah Background Merah</td>
+              <td>
+                <p>File Harus PDF dan Maksimal 500kb</p>
+                <input type="file" name="pdf_photo" accept="application/pdf" class="form-control-file" id="pdf_fakta" required>
+              </td>
+            </tr>
+            <tr>
+              <td>Surat Sehat dan Keterangan Buta Warna dari Puskesmas</td>
+              <td>
+                <p>File Harus PDF dan Maksimal 500kb</p>
+                <input type="file" name="pdf_surat_dokter" accept="application/pdf" class="form-control-file" id="pdf_fakta" required>
               </td>
             </tr>
             <tr>

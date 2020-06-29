@@ -2,20 +2,26 @@
 <table>
   <tr>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="logout.php">Keluar</a></td>
-    <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-warning btn-md" href="cetak-form.php?nik=<?php echo $d['nik'] ?>">Cetak Formulir</a></td>
+    <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="cetak-form.php?nik=<?php echo $d['nik'] ?>">Cetak Formulir</a></td>
+<?php
+$cek_fakta = $d['pdf_fakta'];
+if ($cek_fakta == '') {
+    ?>
     <td><a style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-primary btn-md" href="du.php?nik=<?php echo $d['nik']; ?>">Input Daftar Ulang</a></td>
+<?php
+} ?>
   </tr>
 </table>
 
+<h3>Catatan Operator : <?php echo $d['catatan']; ?></h3>
+<h3></h3>
+
 <table class="table table-bordered">
+
 
   <tr>
     <td>Tanggal Daftar Ulang</td>
     <td><?php echo $d['tgl_daftar_ulang']; ?></td>
-  </tr>
-  <tr>
-    <td>Catatan Operator</td>
-    <td><?php echo $d['catatan']; ?></td>
   </tr>
   <tr>
     <td>Nomor Pendaftaran</td>

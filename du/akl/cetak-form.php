@@ -127,7 +127,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
         </table>
 
         <br>
-        <img width="300px" align="right" src="../../images/fakta-2.png" style="margin-right:  80px;" />
+        <img width="700px" align="center" src="../../images/fakta3.png" style="margin-right:  80px;" />
 
         <?php
       } ?>
