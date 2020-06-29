@@ -23,10 +23,10 @@ if ($_SESSION['status']!="siswa-akl" && $_SESSION['status']!="admin") {
           <center><img style="margin-bottom:  80px; margin-top:  25px; margin-right: 90px" src="../../images/logo-banten-cetak.png" />
         </td>
         <td>
-          <center><h5 style="margin-top:  25px;"><b>SMK Negeri 1 Kragilan</b></h5></center>
-          <center><h6><b>Bukti Daftar Ulang</b></h6></center>
-          <center><h6><b>Tahun Pelajaran 2020/2021</b></h6></center>
-          <center><h6><b>Program Studi Akuntansi dan Keuangan Lembaga</b></h6></center><br>
+          <center><h4 style="margin-top:  25px;"><b>SMK Negeri 1 Kragilan</b></h5></center>
+          <center><h4><b>Bukti Daftar Ulang</b></h6></center>
+          <center><h4><b>Tahun Pelajaran 2020/2021</b></h6></center>
+          <center><h5><b>Program Studi Akuntansi dan Keuangan Lembaga</b></h6></center><br>
         </td>
         <td>
           <center><img style="margin-bottom:  80px; margin-top:  25px; margin-left: 90px" src="../../images/logo-smkn1-cetak.png" />
