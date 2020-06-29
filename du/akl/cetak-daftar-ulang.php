@@ -152,8 +152,8 @@ if ($_SESSION['status']!="siswa-akl" && $_SESSION['status']!="admin") {
           <p>
             <b>Informasi :</b>
             <ol>
-              <li>Pelaksanaan daftar ulang mulai tgl 1 sd 10 juli 2020.</li>
-              <li>Calon peserta didik yg dinyatakan diterima dan tdk melakukan daftar ulang dianggap mengundurkan diri.</li>
+              <li>Pelaksanaan daftar ulang mulai tanggal 1 sd 10 juli 2020.</li>
+              <li>Calon peserta didik yang dinyatakan diterima dan tidak melakukan daftar ulang dianggap mengundurkan diri.</li>
               <li>Bukti daftar ulang wajib dicetak sebagai bukti telah daftar ulang</li>
               <li>Calon peserta didik wajib melihat informasi data yang telah diupload sudah sesuai atau belum, untuk menghindari kesalahan data.</li>
             </ol>
