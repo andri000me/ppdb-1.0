@@ -68,7 +68,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
           $cek_nik = $d['nik'];
           if (!empty($cek_pdf_fakta)) {
               ?>
-        <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="lihat.php?nik=<?php echo $d['nik']; ?>">Kembali</a></td>
+        <a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="lihat.php?nik=<?php echo $d['nik']; ?>">Kembali</a>
 
         <?php
          exit;
