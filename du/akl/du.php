@@ -68,7 +68,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
           $cek_nik = $d['nik'];
           if (!empty($cek_pdf_fakta)) {
               header("location:lihat.php?nik=$cek_nik");
-              // exit;
+              exit;
           } else {
               // echo "kosong";
           } ?>
