@@ -28,7 +28,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
         </div>
         <div class="col-md-6">
           <center>
-            <h3>FAKTA INTEGRITAS</h3>
+            <h3>PAKTA INTEGRITAS</h3>
           </center>
           <center>
             <h3>SISWA SMK NEGERI 1 KRAGILAN</h3>

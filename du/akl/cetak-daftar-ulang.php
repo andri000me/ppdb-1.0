@@ -140,7 +140,7 @@ if ($_SESSION['status']!="siswa-akl" && $_SESSION['status']!="admin") {
         <td>OK</td>
       </tr>
       <tr>
-        <td>Dokumen Fakta Integritas</td>
+        <td>Dokumen Pakta Integritas</td>
         <td>OK</td>
       </tr>
       <tr>
