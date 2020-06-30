@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title></title>
+  <title>Daftar Ulang</title>
 </head>
 
 <body>
@@ -45,7 +44,7 @@
                 }
                 ?>
 
-          <h4 style="margin-top:  40px;">Daftar Ulang PPDB</h5>
+          <h4 style="margin-top:  40px;">Daftar Ulang</h5>
           <h4 style="margin-bottom: 40px;">Komptensi Keahlian Rekayasa Perangkat Lunak</h5>
 
       </div>

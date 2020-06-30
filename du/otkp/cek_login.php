@@ -24,8 +24,8 @@ if ($cek > 0) {
 
     if ($login['kompetensi_keahlian']=="Otomatisasi dan Tata Kelola Perkantoran") {
         $_SESSION['nisn'] = $nisn;
-        $_SESSION['status'] = "siswa";
-        header("location:../../siswa/otkp/edit-siswa.php?nik=$nik");
+        $_SESSION['status'] = "siswa-akl";
+        header("location:lihat.php?nik=$nik");
         // $_SESSION['status'] = "Teknik Komputer Jaringan";
         // echo "cek 1";
     } else {
@@ -34,6 +34,5 @@ if ($cek > 0) {
     }
 } else {
     // echo "gagal2";
-
     header("location:index.php?pesan=gagal");
 }
