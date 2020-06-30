@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
+if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-tkj") {
     header("location:index.php?pesan=belum_login");
 }
 ?>

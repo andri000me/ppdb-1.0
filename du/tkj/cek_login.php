@@ -24,7 +24,7 @@ if ($cek > 0) {
 
     if ($login['kompetensi_keahlian']=="Teknik Komputer dan Jaringan") {
         $_SESSION['nisn'] = $nisn;
-        $_SESSION['status'] = "siswa-akl";
+        $_SESSION['status'] = "siswa-tkj";
         header("location:lihat.php?nik=$nik");
         // $_SESSION['status'] = "Teknik Komputer Jaringan";
         // echo "cek 1";
