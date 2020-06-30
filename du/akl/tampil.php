@@ -4,7 +4,6 @@
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="logout.php">Keluar</a></td>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="cetak-form.php?nik=<?php echo $d['nik'] ?>">Cetak Formulir</a></td>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="../download/F-PESERTA-DIDIK_2020.pdf">Form Dapodik</a></td>
-    <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="#">Surat Untuk Orang Tua Siswa</a></td>
     <!-- <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="../download/SURAT-UNTUK-ORANGTUA-SISWA.pdf">Surat Untuk Orang Tua Siswa</a></td> -->
 <?php
 $cek_fakta = $d['pdf_fakta'];
@@ -76,12 +75,22 @@ if ($cek_fakta == '') {
     <td><?php echo $d['kota']; ?></td>
   </tr>
   <tr>
-    <td>Nomor HP</td>
-    <td><?php echo $d['no_hp']; ?></td>
+    <td>Nomor HP Siswa</td>
+    <td><?php echo $d['no_hp_siswa']; ?></td>
+  </tr>
+  <tr>
+    <td>Nomor HP Orang Tua</td>
+    <td><?php echo $d['no_hp_org_tua']; ?></td>
   </tr>
   <tr>
     <td>NIK</td>
     <td><?php echo $d['nik']; ?></td>
+  </tr>
+  <tr>
+    <td>Standar Kompetensi Lulusan (SKL) Asli</td>
+    <td>
+      <a href="file/<?php echo $d['nik'] ?>-pdf_skl.pdf" type="button" class="btn btn-primary btn-md" name="button">SKL</a>
+    </td>
   </tr>
   <tr>
     <td>Swa Photo Pakta Integritas</td>
