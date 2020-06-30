@@ -1,4 +1,4 @@
-Otomatisasi dan Tata Kelola Perkantoran<?php
+<?php
 session_start();
 if ($_SESSION['status']!="otkp") {
     header("location:../../index.php?pesan=belum_login");
