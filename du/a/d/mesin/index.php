@@ -32,7 +32,7 @@ if ($_SESSION['status']!="mesin") {
       <h3></h3>
     </center>
     <center>
-      <h3>Kompetensi Keahlian Akuntansi Keuangan Lembaga</h3>
+      <h3>Kompetensi Keahlian Teknik Pemesinan</h3>
     </center>
 
     <br><br><br>
