@@ -145,7 +145,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
               <td><?php echo $d['nik']; ?></td>
             </tr>
             <tr>
-              <td>Swa Photo Fakta Integritas</td>
+              <td>Swa Photo Pakta Integritas</td>
               <td>
                 <p>File Harus PDF dan Maksimal 500kb</p>
                 <input type="hidden" name="nik" value="<?php echo $d['nik']; ?>">
@@ -154,7 +154,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
               </td>
             </tr>
             <tr>
-              <td>Scan Fakta Integritas</td>
+              <td>Scan Pakta Integritas</td>
               <td>
                 <p>File Harus PDF dan Maksimal 500kb</p>
                 <input type="file" name="pdf_fakta" accept="application/pdf" class="form-control-file" id="pdf_fakta" required>
