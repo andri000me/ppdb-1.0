@@ -7,6 +7,8 @@ if ($_SESSION['status']!="siswa-akl") {
 include '../../koneksi.php';
 $nik = $_POST['nik'];
 $nisn = $_POST['nisn'];
+$no_hp_siswa = $_POST['no_hp_siswa'];
+$no_hp_org_tua = $_POST['no_hp_org_tua'];
 
 // pdf_skl
 if ($_POST['upload']) {
@@ -214,7 +216,7 @@ mysqli_query($koneksi, "UPDATE daftar_ulang SET
              pdf_surat_dokter='$nisn-$pdf_surat_dokter_up.pdf',
              pdf_skl='$nisn-$pdf_skl.pdf',
              no_hp_siswa='$no_hp_siswa',
-             no_hp_org='$no_hp_org_tua'
+             no_hp_org_tua='$no_hp_org_tua'
              where nik='$nik'
              ")
              or die(mysqli_error($koneksi));
