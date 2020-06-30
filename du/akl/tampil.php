@@ -84,15 +84,15 @@ if ($cek_fakta == '') {
     <td><?php echo $d['nik']; ?></td>
   </tr>
   <tr>
-    <td>Swa Photo Fakta Integritas</td>
+    <td>Swa Photo Pakta Integritas</td>
     <td>
-      <a href="file/<?php echo $d['nik'] ?>-pdf_swa_fakta.pdf" type="button" class="btn btn-primary btn-md" name="button">Swa Photo Fakta Integritas</a>
+      <a href="file/<?php echo $d['nik'] ?>-pdf_swa_fakta.pdf" type="button" class="btn btn-primary btn-md" name="button">Swa Photo Pakta Integritas</a>
     </td>
   </tr>
   <tr>
-    <td>Fakta Integritas</td>
+    <td>Pakta Integritas</td>
     <td>
-      <a href="file/<?php echo $d['nik'] ?>-pdf_fakta.pdf" type="button" class="btn btn-primary btn-md" name="button">Fakta Integritas</a>
+      <a href="file/<?php echo $d['nik'] ?>-pdf_fakta.pdf" type="button" class="btn btn-primary btn-md" name="button">Pakta Integritas</a>
     </td>
   </tr>
   <tr>

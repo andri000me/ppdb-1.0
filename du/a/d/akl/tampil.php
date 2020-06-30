@@ -140,14 +140,14 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
               <td><?php echo $d['nik']; ?></td>
             </tr>
             <tr>
-              <td>Swa Photo Fakta Integritas</td>
+              <td>Swa Photo Pakta Integritas</td>
               <td>
                 <input type="hidden" name="nik" value="<?php echo $d['nik']; ?>">
                 <embed src="../../../akl/file/<?php echo $d['pdf_swa_fakta']; ?>" type="application/pdf" width="100%" height="500px">
               </td>
             </tr>
             <tr>
-              <td>Fakta Integritas</td>
+              <td>Pakta Integritas</td>
               <td>
                 <embed src="../../../akl/file/<?php echo $d['pdf_fakta']; ?>" type="application/pdf" width="100%" height="500px">
               </td>
