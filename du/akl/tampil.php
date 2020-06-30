@@ -1,4 +1,4 @@
-br><br>
+<br>
 <table>
   <tr>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="logout.php">Keluar</a></td>
