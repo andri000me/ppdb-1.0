@@ -156,7 +156,7 @@ if ($_SESSION['status']!="siswa-akl" && $_SESSION['status']!="admin") {
               <li>Calon peserta didik yang dinyatakan diterima dan tidak melakukan daftar ulang dianggap mengundurkan diri.</li>
               <li>Bukti daftar ulang wajib dicetak sebagai bukti telah daftar ulang</li>
               <li>Calon peserta didik wajib melihat informasi data yang telah diupload sudah sesuai atau belum, untuk menghindari kesalahan data.</li>
-              <li>Jika terdapat pemalsuan dokumen maka siswa akan diskualifikasi/dianggap gugur.</li>
+              <li>Jika terdapat pemalsuan dokumen maka siswa akan di diskualifikasi/dianggap gugur.</li>
             </ol>
           </p>
         </td>
