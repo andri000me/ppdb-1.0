@@ -8,6 +8,34 @@ include '../../koneksi.php';
 $nik = $_POST['nik'];
 $nisn = $_POST['nisn'];
 
+// pdf_skl
+if ($_POST['upload']) {
+    $ekstensi_diperbolehkan = array('pdf');
+    $waktu = date('d-m-Y');
+    $pdf_skl_up = "pdf_skl";
+    $pdf_skl = $_FILES['pdf_skl']['name'];
+    $x = explode('.', $pdf_skl);
+    $ekstensi = strtolower(end($x));
+    $ukuran    = $_FILES['pdf_skl']['size'];
+    $file_tmp = $_FILES['pdf_skl']['tmp_name'];
+    if (in_array($ekstensi, $ekstensi_diperbolehkan) === true) {
+        if ($ukuran < 544070) {
+            move_uploaded_file($file_tmp, 'file/'.$nisn.'-'.$pdf_skl_up.'.pdf');
+        } else {
+            echo 'pdf_skl';
+            echo '<br>';
+            echo ' UKURAN FILE TERLALU BESAR';
+            exit;
+        }
+    } else {
+        echo 'File SKHUN tidak pdf';
+        echo "<br>";
+        echo ' EKSTENSI FILE YANG DI UPLOAD TIDAK DI PERBOLEHKAN';
+        // header("location:gagal-upload.php");
+        exit;
+    }
+}
+
 // pdf_fakta
 if ($_POST['upload']) {
     $ekstensi_diperbolehkan = array('pdf');

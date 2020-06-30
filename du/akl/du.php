@@ -145,6 +145,13 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
               <td><?php echo $d['nik']; ?></td>
             </tr>
             <tr>
+              <td>Standar Kompetensi Lulusan (SKL) Asli</td>
+              <td>
+                <p>File Harus PDF dan Maksimal 500kb</p>
+                <input type="file" name="pdf_skl" accept="application/pdf" class="form-control-file" id="pdf_skl" required>
+              </td>
+            </tr>
+            <tr>
               <td>Swa Photo Pakta Integritas</td>
               <td>
                 <p>File Harus PDF dan Maksimal 500kb</p>
