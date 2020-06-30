@@ -32,7 +32,7 @@ if ($_SESSION['status']!="tkj") {
       <h3></h3>
     </center>
     <center>
-      <h3>Kompetensi Keahlian Akuntansi Keuangan Lembaga</h3>
+      <h3>Kompetensi Keahlian Teknik Komputer dan Jaringan</h3>
     </center>
 
     <br><br><br>
@@ -98,7 +98,7 @@ if ($_SESSION['status']!="tkj") {
       asal_sekolah,
       nik,
       kondisi
-         FROM daftar_ulang where kompetensi_keahlian='Otomatisasi dan Tata Kelola Perkantoran'");
+         FROM daftar_ulang where kompetensi_keahlian='Teknik Komputer dan Jaringan'");
     $total = mysqli_num_rows($result);
     $pages = ceil($total/$halperpage);
 

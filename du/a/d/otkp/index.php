@@ -1,4 +1,4 @@
-<?php
+Otomatisasi dan Tata Kelola Perkantoran<?php
 session_start();
 if ($_SESSION['status']!="otkp") {
     header("location:../../index.php?pesan=belum_login");
@@ -32,7 +32,7 @@ if ($_SESSION['status']!="otkp") {
       <h3></h3>
     </center>
     <center>
-      <h3>Kompetensi Keahlian Akuntansi Keuangan Lembaga</h3>
+      <h3>Kompetensi Keahlian Otomatisasi dan Tata Kelola Perkantoran</h3>
     </center>
 
     <br><br><br>

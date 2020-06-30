@@ -32,7 +32,7 @@ if ($_SESSION['status']!="rpl") {
       <h3></h3>
     </center>
     <center>
-      <h3>Kompetensi Keahlian Akuntansi Keuangan Lembaga</h3>
+      <h3>Kompetensi Keahlian Rekayasa Perangkat Lunak</h3>
     </center>
 
     <br><br><br>
@@ -98,7 +98,7 @@ if ($_SESSION['status']!="rpl") {
       asal_sekolah,
       nik,
       kondisi
-         FROM daftar_ulang where kompetensi_keahlian='Otomatisasi dan Tata Kelola Perkantoran'");
+         FROM daftar_ulang where kompetensi_keahlian='Rekayasa Perangkat Lunak'");
     $total = mysqli_num_rows($result);
     $pages = ceil($total/$halperpage);
 

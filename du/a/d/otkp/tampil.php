@@ -34,7 +34,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="otkp") {
             <h3></h3>
           </center>
           <center>
-            <h3>Kompetensi Keahlian Akuntansi Keuangan Lembaga</h3>
+            <h3>Kompetensi Keahlian Otomatisasi dan Tata Kelola Perkantoran</h3>
           </center>
         </div>
         <div class="col-md-2">
