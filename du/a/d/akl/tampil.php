@@ -59,6 +59,8 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
       kecamatan,
       kota,
       no_hp,
+      no_hp_siswa,
+      no_hp_org_tua,
       nik,
       pdf_swa_fakta,
       pdf_fakta,
@@ -132,12 +134,20 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
               <td><?php echo $d['kota']; ?></td>
             </tr>
             <tr>
+              <td>NIK</td>
+              <td><?php echo $d['nik']; ?></td>
+            </tr>
+            <tr>
               <td>Nomor HP</td>
               <td><?php echo $d['no_hp']; ?></td>
             </tr>
             <tr>
-              <td>NIK</td>
-              <td><?php echo $d['nik']; ?></td>
+              <td>Nomor HP Siswa</td>
+              <td><?php echo $d['no_hp_siswa']; ?></td>
+            </tr>
+            <tr>
+              <td>Nomor HP Orang Tua</td>
+              <td><?php echo $d['no_hp_org_tua']; ?></td>
             </tr>
             <tr>
               <td>Swa Photo Pakta Integritas</td>
