@@ -17,7 +17,7 @@ if ($_SESSION['status']!="akl") {
                pdf_kk='',
                pdf_photo='',
                pdf_surat_dokter='',
-               pdf_skl='',
+               pdf_skl=''
                where nik='$nik'
                ") or die(mysqli_error($koneksi));
     ;
