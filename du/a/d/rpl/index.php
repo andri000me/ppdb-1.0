@@ -111,7 +111,7 @@ if ($_SESSION['status']!="rpl") {
       asal_sekolah,
       nik,
       kondisi
-        from daftar_ulang where kompetensi_keahlian='Otomatisasi dan Tata Kelola Perkantoran' LIMIT $mulai, $halperpage ");
+        from daftar_ulang where kompetensi_keahlian='Rekayasa Perangkat Lunak' LIMIT $mulai, $halperpage ");
     $no = $mulai+1;
 
 
