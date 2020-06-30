@@ -89,42 +89,42 @@ if ($cek_fakta == '') {
   <tr>
     <td>Standar Kompetensi Lulusan (SKL) Asli</td>
     <td>
-      <a href="file/<?php echo $d['nik'] ?>-pdf_skl.pdf" type="button" class="btn btn-primary btn-md" name="button">SKL</a>
+      <a href="file/<?php echo $d['pdf_skl'] ?>" type="button" class="btn btn-primary btn-md" name="button">SKL</a>
     </td>
   </tr>
   <tr>
     <td>Swa Photo Pakta Integritas</td>
     <td>
-      <a href="file/<?php echo $d['nik'] ?>-pdf_swa_fakta.pdf" type="button" class="btn btn-primary btn-md" name="button">Swa Photo Pakta Integritas</a>
+      <a href="file/<?php echo $d['pdf_swa_fakta'] ?>" type="button" class="btn btn-primary btn-md" name="button">Swa Photo Pakta Integritas</a>
     </td>
   </tr>
   <tr>
     <td>Pakta Integritas</td>
     <td>
-      <a href="file/<?php echo $d['nik'] ?>-pdf_fakta.pdf" type="button" class="btn btn-primary btn-md" name="button">Pakta Integritas</a>
+      <a href="file/<?php echo $d['pdf_fakta'] ?>" type="button" class="btn btn-primary btn-md" name="button">Pakta Integritas</a>
     </td>
   </tr>
   <tr>
     <td>Akta Kelahiran</td>
     <td>
-      <a href="file/<?php echo $d['nik'] ?>-pdf_akta.pdf" type="button" class="btn btn-primary btn-md" name="button">Akta Kelahiran</a>
+      <a href="file/<?php echo $d['pdf_akta'] ?>" type="button" class="btn btn-primary btn-md" name="button">Akta Kelahiran</a>
     </td>
   </tr>
   <tr>
     <td>Kartu Keluarga</td>
     <td>
-      <a href="file/<?php echo $d['nik'] ?>-pdf_kk.pdf" type="button" class="btn btn-primary btn-md" name="button">Kartu Kelurga</a>
+      <a href="file/<?php echo $d['pdf_kk'] ?>" type="button" class="btn btn-primary btn-md" name="button">Kartu Kelurga</a>
     </td>
   </tr>
   <tr>
     <td>Photo Background Merah</td>
     <td>
-      <a href="file/<?php echo $d['nik'] ?>-pdf_photo.pdf" type="button" class="btn btn-primary btn-md" name="button">Photo</a>
+      <a href="file/<?php echo $d['pdf_photo'] ?>" type="button" class="btn btn-primary btn-md" name="button">Photo</a>
     </td>
   </tr>
   <tr>
     <td>Surat Sehat dan Keterangan Buta Warna dari Puskesmas</td>
     <td>
-      <a href="file/<?php echo $d['nik'] ?>-pdf_surat_dokter.pdf" type="button" class="btn btn-primary btn-md" name="button">Surat Sehat dan Buta Warna</a>
+      <a href="file/<?php echo $d['pdf_surat_dokter'] ?>" type="button" class="btn btn-primary btn-md" name="button">Surat Sehat dan Buta Warna</a>
     </td>
   </tr>
