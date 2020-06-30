@@ -211,7 +211,10 @@ mysqli_query($koneksi, "UPDATE daftar_ulang SET
              pdf_akta='$nisn-$pdf_akta_up.pdf',
              pdf_kk='$nisn-$pdf_kk_up.pdf',
              pdf_photo='$nisn-$pdf_photo_up.pdf',
-             pdf_surat_dokter='$nisn-$pdf_surat_dokter_up.pdf'
+             pdf_surat_dokter='$nisn-$pdf_surat_dokter_up.pdf',
+             pdf_skl='$nisn-$pdf_skl.pdf',
+             no_hp_siswa='$no_hp_siswa',
+             no_hp_org='$no_hp_org_tua'
              where nik='$nik'
              ")
              or die(mysqli_error($koneksi));

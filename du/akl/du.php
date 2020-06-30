@@ -145,6 +145,18 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-akl") {
               <td><?php echo $d['nik']; ?></td>
             </tr>
             <tr>
+              <td>Nomor HP Siswa</td>
+              <td>
+                <input type="text" name="no_hp_siswa" value="" class="form-control">
+              </td>
+            </tr>
+            <tr>
+              <td>Nomor HP Orang Tua</td>
+              <td>
+                <input type="text" name="no_hp_org_tua" value="" class="form-control">
+              </td>
+            </tr>
+            <tr>
               <td>Standar Kompetensi Lulusan (SKL) Asli</td>
               <td>
                 <p>File Harus PDF dan Maksimal 500kb</p>
