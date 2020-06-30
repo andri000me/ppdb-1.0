@@ -3,6 +3,9 @@
   <tr>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="logout.php">Keluar</a></td>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="cetak-form.php?nik=<?php echo $d['nik'] ?>">Cetak Formulir</a></td>
+    <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="../download/F-PESERTA-DIDIK_2020.pdf">Form Dapodik</a></td>
+    <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="#">Surat Untuk Orang Tua Siswa</a></td>
+    <!-- <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="../download/SURAT-UNTUK-ORANGTUA-SISWA.pdf">Surat Untuk Orang Tua Siswa</a></td> -->
 <?php
 $cek_fakta = $d['pdf_fakta'];
 if ($cek_fakta == '') {
