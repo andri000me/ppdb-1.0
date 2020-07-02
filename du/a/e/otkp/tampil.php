@@ -153,37 +153,37 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="otkp") {
               <td>Swa Photo Pakta Integritas</td>
               <td>
                 <input type="hidden" name="nik" value="<?php echo $d['nik']; ?>">
-                <embed src="../../../akl/file/<?php echo $d['pdf_swa_fakta']; ?>" type="application/pdf" width="100%" height="500px">
+                <embed src="../../../otkp/file/<?php echo $d['pdf_swa_fakta']; ?>" type="application/pdf" width="100%" height="500px">
               </td>
             </tr>
             <tr>
               <td>Pakta Integritas</td>
               <td>
-                <embed src="../../../akl/file/<?php echo $d['pdf_fakta']; ?>" type="application/pdf" width="100%" height="500px">
+                <embed src="../../../otkp/file/<?php echo $d['pdf_fakta']; ?>" type="application/pdf" width="100%" height="500px">
               </td>
             </tr>
             <tr>
               <td>Akta Kelahiran</td>
               <td>
-                <embed src="../../../akl/file/<?php echo $d['pdf_akta']; ?>" type="application/pdf" width="100%" height="500px">
+                <embed src="../../../otkp/file/<?php echo $d['pdf_akta']; ?>" type="application/pdf" width="100%" height="500px">
               </td>
             </tr>
             <tr>
               <td>Kartu Keluarga</td>
               <td>
-                <embed src="../../../akl/file/<?php echo $d['pdf_kk']; ?>" type="application/pdf" width="100%" height="500px">
+                <embed src="../../../otkp/file/<?php echo $d['pdf_kk']; ?>" type="application/pdf" width="100%" height="500px">
               </td>
             </tr>
             <tr>
               <td>Photo Background Merah</td>
               <td>
-                <embed src="../../../akl/file/<?php echo $d['pdf_photo']; ?>" type="application/pdf" width="100%" height="500px">
+                <embed src="../../../otkp/file/<?php echo $d['pdf_photo']; ?>" type="application/pdf" width="100%" height="500px">
               </td>
             </tr>
             <tr>
               <td>Surat Dokter</td>
               <td>
-                <embed src="../../../akl/file/<?php echo $d['pdf_surat_dokter']; ?>" type="application/pdf" width="100%" height="500px">
+                <embed src="../../../otkp/file/<?php echo $d['pdf_surat_dokter']; ?>" type="application/pdf" width="100%" height="500px">
               </td>
             </tr>
             <tr>
