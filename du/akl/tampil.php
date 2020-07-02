@@ -1,8 +1,9 @@
 <br>
 <div class='alert alert-warning' role='alert'>
-  <center>1. Lakukan Cetak Pakta Integritas
-    <br>2. Isi Form Dapodik
-    <br>3. Input Daftar Ulang
+Catatan Harap di Ingat :
+<br>1. Lakukan Cetak Pakta Integritas
+<br>2. Lakukan Pengisian Form Dapodik
+<br>3. Lakukan Pengisian Daftar Ulang
 </div>
 <table>
   <tr>
