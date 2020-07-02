@@ -12,7 +12,8 @@ $nisn = addslashes(trim($_POST['nisn']));
 $nik = addslashes(trim($_POST['nik']));
 
 // menyeleksi data admin dengan nisn dan nik yang sesuai
-$data = mysqli_query($koneksi, "select * from du_otkp where nisn='$nisn' and nik='$nik'");
+// $data = mysqli_query($koneksi, "select * from du_otkp where nisn='$nisn' and nik='$nik'") or die(mysqli_error($koneksi));
+mysqli_query($koneksi, "select * from du_otkp where nisn='$nisn' and nik='$nik'") or die(mysqli_error($koneksi));
 
 // menghitung jumlah data yang ditemukan
 $cek = mysqli_num_rows($data);
@@ -27,12 +28,12 @@ if ($cek > 0) {
         $_SESSION['status'] = "siswa-otkp";
         header("location:lihat.php?nik=$nik");
         // $_SESSION['status'] = "Teknik Komputer Jaringan";
-        // echo "cek 1";
+        echo "cek 1";
     } else {
-        // echo "gagal1";
-        header("location:index.php?pesan=gagal1");
+        echo "gagal1";
+        // header("location:index.php?pesan=gagal1");
     }
 } else {
-    // echo "gagal2";
-    header("location:index.php?pesan=gagal");
+    echo "gagal2";
+    // header("location:index.php?pesan=gagal");
 }
