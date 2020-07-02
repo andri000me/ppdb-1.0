@@ -109,7 +109,7 @@
         asal_sekolah,
         kondisi,
         catatan
-        from du_tkj where kompetensi_keahlian in ('Teknik Kendaraan Ringan Otomotif') LIMIT $mulai, $halperpage ");
+        from du_tkr where kompetensi_keahlian in ('Teknik Kendaraan Ringan Otomotif') LIMIT $mulai, $halperpage ");
       $no = $mulai+1;
 
 
