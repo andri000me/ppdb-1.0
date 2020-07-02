@@ -4,7 +4,7 @@ include '../../../../koneksi.php';
 
 
 session_start();
-if ($_SESSION['status']!="tkj") {
+if ($_SESSION['status']!="tkj" && $_SESSION['status']!="admin") {
     header("location:../../index.php?pesan=belum_login");
 } else {
     $nik = $_GET['nik'];
