@@ -98,7 +98,7 @@ if ($_SESSION['status']!="tkr") {
       asal_sekolah,
       nik,
       kondisi
-         FROM daftar_ulang where kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif'");
+         FROM du_tkr where kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif'");
     $total = mysqli_num_rows($result);
     $pages = ceil($total/$halperpage);
 
@@ -111,7 +111,7 @@ if ($_SESSION['status']!="tkr") {
       asal_sekolah,
       nik,
       kondisi
-        from daftar_ulang where kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif' LIMIT $mulai, $halperpage ");
+        from du_tkr where kompetensi_keahlian='Teknik Kendaraan Ringan Otomotif' LIMIT $mulai, $halperpage ");
     $no = $mulai+1;
 
 

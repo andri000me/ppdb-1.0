@@ -60,7 +60,7 @@ if ($_SESSION['status']!="siswa-akl" && $_SESSION['status']!="admin") {
       tgl_daftar_ulang,
       kondisi,
       no_pendaftaran
-       from daftar_ulang where nik='$nik'");
+       from du_akl where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           ?>
 

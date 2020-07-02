@@ -206,7 +206,7 @@ if ($_POST['upload']) {
 
 // UPDATE `upload` SET `id_file`=[value-1],`nama_file`=[value-2] WHERE 1
 
-mysqli_query($koneksi, "UPDATE daftar_ulang SET
+mysqli_query($koneksi, "UPDATE du_akl SET
              tgl_daftar_ulang='$waktu',
              pdf_swa_fakta='$nisn-$pdf_swa_fakta_up.pdf',
              pdf_fakta='$nisn-$pdf_fakta_up.pdf',

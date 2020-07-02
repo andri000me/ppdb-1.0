@@ -72,7 +72,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="tkj") {
       kondisi,
       catatan,
       no_pendaftaran
-       from daftar_ulang where nik='$nik'");
+       from du_tkj where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           ?>
 

@@ -9,7 +9,7 @@ if ($_SESSION['status']!="tkj") {
 } else {
     $nik = $_GET['nik'];
 
-    mysqli_query($koneksi, "UPDATE daftar_ulang SET
+    mysqli_query($koneksi, "UPDATE du_tkj SET
                nik='$nik',
                pdf_fakta='',
                pdf_swa_fakta='',

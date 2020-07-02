@@ -98,7 +98,7 @@ if ($_SESSION['status']!="rpl") {
       asal_sekolah,
       nik,
       kondisi
-         FROM daftar_ulang where kompetensi_keahlian='Rekayasa Perangkat Lunak'");
+         FROM du_rpl where kompetensi_keahlian='Rekayasa Perangkat Lunak'");
     $total = mysqli_num_rows($result);
     $pages = ceil($total/$halperpage);
 
@@ -111,7 +111,7 @@ if ($_SESSION['status']!="rpl") {
       asal_sekolah,
       nik,
       kondisi
-        from daftar_ulang where kompetensi_keahlian='Rekayasa Perangkat Lunak' LIMIT $mulai, $halperpage ");
+        from du_rpl where kompetensi_keahlian='Rekayasa Perangkat Lunak' LIMIT $mulai, $halperpage ");
     $no = $mulai+1;
 
 

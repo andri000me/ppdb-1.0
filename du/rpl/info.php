@@ -97,7 +97,7 @@
         asal_sekolah,
         kondisi,
         catatan
-         FROM daftar_ulang");
+         FROM du_rpl");
       $total = mysqli_num_rows($result);
       $pages = ceil($total/$halperpage);
 
@@ -109,7 +109,7 @@
         asal_sekolah,
         kondisi,
         catatan
-        from daftar_ulang where kompetensi_keahlian in ('Rekayasa Perangkat Lunak') LIMIT $mulai, $halperpage ");
+        from du_rpl where kompetensi_keahlian in ('Rekayasa Perangkat Lunak') LIMIT $mulai, $halperpage ");
       $no = $mulai+1;
 
 

@@ -98,7 +98,7 @@ if ($_SESSION['status']!="mesin") {
       asal_sekolah,
       nik,
       kondisi
-         FROM daftar_ulang where kompetensi_keahlian='Teknik Pemesinan'");
+         FROM du_tpm where kompetensi_keahlian='Teknik Pemesinan'");
     $total = mysqli_num_rows($result);
     $pages = ceil($total/$halperpage);
 
@@ -111,7 +111,7 @@ if ($_SESSION['status']!="mesin") {
       asal_sekolah,
       nik,
       kondisi
-        from daftar_ulang where kompetensi_keahlian='Teknik Pemesinan' LIMIT $mulai, $halperpage ");
+        from du_tpm where kompetensi_keahlian='Teknik Pemesinan' LIMIT $mulai, $halperpage ");
     $no = $mulai+1;
 
 

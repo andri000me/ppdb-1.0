@@ -98,7 +98,7 @@ if ($_SESSION['status']!="tkj") {
       asal_sekolah,
       nik,
       kondisi
-         FROM daftar_ulang where kompetensi_keahlian='Teknik Komputer dan Jaringan'");
+         FROM du_tkj where kompetensi_keahlian='Teknik Komputer dan Jaringan'");
     $total = mysqli_num_rows($result);
     $pages = ceil($total/$halperpage);
 
@@ -111,7 +111,7 @@ if ($_SESSION['status']!="tkj") {
       asal_sekolah,
       nik,
       kondisi
-        from daftar_ulang where kompetensi_keahlian='Teknik Komputer dan Jaringan' LIMIT $mulai, $halperpage ");
+        from du_tkj where kompetensi_keahlian='Teknik Komputer dan Jaringan' LIMIT $mulai, $halperpage ");
     $no = $mulai+1;
 
 

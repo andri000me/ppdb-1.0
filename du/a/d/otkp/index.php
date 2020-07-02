@@ -98,7 +98,7 @@ if ($_SESSION['status']!="otkp") {
       asal_sekolah,
       nik,
       kondisi
-         FROM daftar_ulang where kompetensi_keahlian='Otomatisasi dan Tata Kelola Perkantoran'");
+         FROM du_otkp where kompetensi_keahlian='Otomatisasi dan Tata Kelola Perkantoran'");
     $total = mysqli_num_rows($result);
     $pages = ceil($total/$halperpage);
 
@@ -111,7 +111,7 @@ if ($_SESSION['status']!="otkp") {
       asal_sekolah,
       nik,
       kondisi
-        from daftar_ulang where kompetensi_keahlian='Otomatisasi dan Tata Kelola Perkantoran' LIMIT $mulai, $halperpage ");
+        from du_otkp where kompetensi_keahlian='Otomatisasi dan Tata Kelola Perkantoran' LIMIT $mulai, $halperpage ");
     $no = $mulai+1;
 
 

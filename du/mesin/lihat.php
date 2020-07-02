@@ -62,7 +62,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-tpm") {
       kondisi,
       catatan,
       no_pendaftaran
-       from daftar_ulang where nik='$nik'");
+       from du_tpm where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           include('tampil.php'); ?>
 

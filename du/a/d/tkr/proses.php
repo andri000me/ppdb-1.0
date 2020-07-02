@@ -12,7 +12,7 @@ if ($_SESSION['status']!="tkr") {
     $kondisi = $_POST['kondisi'];
 
 
-    mysqli_query($koneksi, "UPDATE daftar_ulang SET
+    mysqli_query($koneksi, "UPDATE du_tkr SET
                nik='$nik',
                catatan='$catatan',
                kondisi='$kondisi'
