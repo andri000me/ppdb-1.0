@@ -30,10 +30,7 @@ if ($cek_fakta == '') {
     <td>Tanggal Daftar Ulang</td>
     <td><?php echo $d['tgl_daftar_ulang']; ?></td>
   </tr>
-  <tr>
-    <td>Nomor Pendaftaran</td>
-    <td><?php echo $d['no_pendaftaran']; ?></td>
-  </tr>
+  
   <tr>
     <td>Nama Siswa</td>
     <td><?php echo $d['nama']; ?></td>

@@ -92,10 +92,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-otkp") {
               <td>Sudah Daftar Ulang?</td>
               <td><?php echo $d['no_pendaftaran']; ?></td>
             </tr>
-            <tr>
-              <td>Nomor Pendaftaran</td>
-              <td><?php echo $d['no_pendaftaran']; ?></td>
-            </tr>
+            
             <tr>
               <td>Nama Siswa</td>
               <td><?php echo $d['nama']; ?></td>
