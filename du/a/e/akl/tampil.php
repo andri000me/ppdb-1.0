@@ -66,6 +66,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
       pdf_fakta,
       pdf_akta,
       pdf_kk,
+      pdf_skl,
       pdf_photo,
       pdf_surat_dokter,
       tgl_daftar_ulang,
