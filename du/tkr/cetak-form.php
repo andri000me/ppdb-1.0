@@ -62,7 +62,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-otkp") {
       tgl_daftar_ulang,
       kondisi,
       no_pendaftaran
-       from du_tkj where nik='$nik'");
+       from du_tkr where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           ?>
 

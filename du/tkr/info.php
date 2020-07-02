@@ -97,7 +97,7 @@
         asal_sekolah,
         kondisi,
         catatan
-         FROM du_tkj");
+         FROM du_tkr");
       $total = mysqli_num_rows($result);
       $pages = ceil($total/$halperpage);
 

@@ -62,7 +62,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-otkp") {
       tgl_daftar_ulang,
       kondisi,
       no_pendaftaran
-       from du_tkj where nik='$nik'");
+       from du_tkr where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           $cek_pdf_fakta = $d['pdf_fakta'];
           $cek_nik = $d['nik'];
@@ -92,7 +92,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="siswa-otkp") {
               <td>Sudah Daftar Ulang?</td>
               <td><?php echo $d['no_pendaftaran']; ?></td>
             </tr>
-            
+
             <tr>
               <td>Nama Siswa</td>
               <td><?php echo $d['nama']; ?></td>

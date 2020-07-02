@@ -60,12 +60,12 @@ if ($_SESSION['status']!="siswa-otkp" && $_SESSION['status']!="admin") {
       tgl_daftar_ulang,
       kondisi,
       no_pendaftaran
-       from du_tkj where nik='$nik'");
+       from du_tkr where nik='$nik'");
       while ($d = mysqli_fetch_array($data)) {
           ?>
 
     <table class="table table-bordered">
-      
+
       <tr>
         <td>Tanggal Daftar Ulang</td>
         <td><?php echo $d['tgl_daftar_ulang']; ?></td>
