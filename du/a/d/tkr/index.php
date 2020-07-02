@@ -58,9 +58,6 @@ if ($_SESSION['status']!="tkr") {
             <center>No
           </th>
           <th>
-            <center>Nomor Pendaftaran
-          </th>
-          <th>
             <center>Tanggal Pendaftaran
           </th>
           <th>
@@ -121,9 +118,6 @@ if ($_SESSION['status']!="tkr") {
         <tr>
           <td>
             <center><?php echo $no++ ?>
-          </td>
-          <td>
-            <center><?php echo $d['no_pendaftaran']; ?>
           </td>
           <td>
             <center><?php echo $d['tgl_daftar_ulang']; ?>
