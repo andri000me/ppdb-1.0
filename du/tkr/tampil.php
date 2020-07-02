@@ -2,7 +2,7 @@
 <table>
   <tr>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="logout.php">Keluar</a></td>
-    <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="cetak-form.php?nik=<?php echo $d['nik'] ?>">Cetak Formulir</a></td>
+    <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="cetak-form.php?nik=<?php echo $d['nik'] ?>">Cetak Pakta Integritas</a></td>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="https://docs.google.com/forms/d/e/1FAIpQLSeQhRdEHyXJ3xF1nTUFareJZjobxz8sb1EgnjlmiilCiqAiKA/viewform">Form Dapodik</a></td>
     <!-- <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md" href="../download/SURAT-UNTUK-ORANGTUA-SISWA.pdf">Surat Untuk Orang Tua Siswa</a></td> -->
 <?php
@@ -30,7 +30,7 @@ if ($cek_fakta == '') {
     <td>Tanggal Daftar Ulang</td>
     <td><?php echo $d['tgl_daftar_ulang']; ?></td>
   </tr>
-  
+
   <tr>
     <td>Nama Siswa</td>
     <td><?php echo $d['nama']; ?></td>
