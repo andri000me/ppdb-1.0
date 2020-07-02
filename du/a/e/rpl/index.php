@@ -56,9 +56,7 @@ if ($_SESSION['status']!="rpl" && $_SESSION['status']!="admin") {
           <th>
             <center>No
           </th>
-          <th>
-            <center>Nomor Pendaftaran
-          </th>
+          
           <th>
             <center>Tanggal Pendaftaran
           </th>

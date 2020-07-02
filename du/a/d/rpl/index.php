@@ -57,9 +57,7 @@ if ($_SESSION['status']!="rpl") {
           <th>
             <center>No
           </th>
-          <th>
-            <center>Nomor Pendaftaran
-          </th>
+          
           <th>
             <center>Tanggal Pendaftaran
           </th>
@@ -122,7 +120,7 @@ if ($_SESSION['status']!="rpl") {
           <td>
             <center><?php echo $no++ ?>
           </td>
-          
+
           <td>
             <center><?php echo $d['tgl_daftar_ulang']; ?>
           </td>
