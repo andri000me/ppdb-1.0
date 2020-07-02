@@ -225,4 +225,4 @@ mysqli_query($koneksi, "UPDATE du_tkr SET
 
 
 // node_id=<?php echo $d['node_id'];
-// header("location:cetak-daftar-ulang.php?nik=$nik");
+header("location:cetak-daftar-ulang.php?nik=$nik");
