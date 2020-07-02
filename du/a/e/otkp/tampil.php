@@ -163,6 +163,12 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="otkp") {
               </td>
             </tr>
             <tr>
+              <td>SKL</td>
+              <td>
+                <embed src="../../../otkp/file/<?php echo $d['pdf_skl']; ?>" type="application/pdf" width="100%" height="500px">
+              </td>
+            </tr>
+            <tr>
               <td>Akta Kelahiran</td>
               <td>
                 <embed src="../../../otkp/file/<?php echo $d['pdf_akta']; ?>" type="application/pdf" width="100%" height="500px">

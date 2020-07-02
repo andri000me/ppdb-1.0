@@ -161,11 +161,18 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="mesin") {
               </td>
             </tr>
             <tr>
+              <td>SKL</td>
+              <td>
+                <embed src="../../../mesin/file/<?php echo $d['pdf_skl']; ?>" type="application/pdf" width="100%" height="500px">
+              </td>
+            </tr>
+            <tr>
               <td>Akta Kelahiran</td>
               <td>
                 <embed src="../../../mesin/file/<?php echo $d['pdf_akta']; ?>" type="application/pdf" width="100%" height="500px">
               </td>
             </tr>
+
             <tr>
               <td>Kartu Keluarga</td>
               <td>
