@@ -1,4 +1,10 @@
 <br>
+<div class='alert alert-warning' role='alert'>
+Catatan Harap di Ingat :
+<br>1. Lakukan Cetak Pakta Integritas
+<br>2. Lakukan Pengisian Form Dapodik
+<br>3. Lakukan Pengisian Daftar Ulang
+</div>
 <table>
   <tr>
     <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="logout.php">Keluar</a></td>
