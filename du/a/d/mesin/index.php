@@ -58,9 +58,6 @@ if ($_SESSION['status']!="mesin") {
             <center>No
           </th>
           <th>
-            <center>Nomor Pendaftaran
-          </th>
-          <th>
             <center>Tanggal Pendaftaran
           </th>
           <th>

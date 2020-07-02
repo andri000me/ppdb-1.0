@@ -87,11 +87,9 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="mesin") {
 
         <table class="table table-bordered">
           <form class="" action="proses.php" method="post">
-
-
             <tr>
-              <td>Nomor Pendaftaran</td>
-              <td><?php echo $d['no_pendaftaran']; ?></td>
+              <td>Tanggal Pendaftaran</td>
+              <td><?php echo $d['tgl_daftar_ulang']; ?></td>
             </tr>
             <tr>
               <td>Nama Siswa</td>

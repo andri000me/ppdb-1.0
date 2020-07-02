@@ -122,9 +122,7 @@ if ($_SESSION['status']!="rpl") {
           <td>
             <center><?php echo $no++ ?>
           </td>
-          <td>
-            <center><?php echo $d['no_pendaftaran']; ?>
-          </td>
+          
           <td>
             <center><?php echo $d['tgl_daftar_ulang']; ?>
           </td>
