@@ -214,7 +214,7 @@ mysqli_query($koneksi, "UPDATE du_otkp SET
              pdf_kk='$nisn-$pdf_kk_up.pdf',
              pdf_photo='$nisn-$pdf_photo_up.pdf',
              pdf_surat_dokter='$nisn-$pdf_surat_dokter_up.pdf',
-             pdf_skl='$nisn-$pdf_skl.pdf',
+             pdf_skl='$nisn-$pdf_skl_up.pdf',
              no_hp_siswa='$no_hp_siswa',
              no_hp_org_tua='$no_hp_org_tua'
              where nik='$nik'
