@@ -198,7 +198,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="mesin") {
           <option value="Data Tidak Sesuai">Data Tidak Sesuai</option>
         </select>
 
-        <input style="margin-bottom: 50px" type="submit" class="btn btn-success" name="" value="Submit">
+        <!-- <input style="margin-bottom: 50px" type="submit" class="btn btn-success" name="" value="Submit"> -->
 
         </form>
 
