@@ -32,7 +32,7 @@
           <h5><b>Tahun Pelajaran 2020/2021</b></h4>
         </center>
         <center>
-          <h4><b>Program Studi Akuntansi dan Keuangan Lembaga</b></h4>
+          <h4><b>Program Studi Teknik Komputer dan Jaringan</b></h4>
         </center><br>
         <!-- font ganti jenis -->
       </div>
@@ -109,7 +109,7 @@
         asal_sekolah,
         kondisi,
         catatan
-        from du_tkj where kompetensi_keahlian in ('Akuntansi dan Keuangan Lembaga') LIMIT $mulai, $halperpage ");
+        from du_tkj where kompetensi_keahlian in ('Teknik Komputer dan Jaringan') LIMIT $mulai, $halperpage ");
       $no = $mulai+1;
 
 
