@@ -24,7 +24,7 @@ if ($cek > 0) {
     if ($login['level']=="admin") {
         $_SESSION['username'] = $username;
         $_SESSION['status'] = "admin";
-        header("location:e/index.php");
+        header("location:e/tkj/index.php");
     } elseif ($login['level']=="operator") {
         $_SESSION['username'] = $username;
         $_SESSION['status'] = "login";
