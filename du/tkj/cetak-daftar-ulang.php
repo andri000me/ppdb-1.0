@@ -65,10 +65,7 @@ if ($_SESSION['status']!="siswa-tkj" && $_SESSION['status']!="admin") {
           ?>
 
     <table class="table table-bordered">
-      <tr>
-        <td>Nomor Pendaftaran</td>
-        <td><?php echo $d['no_pendaftaran']; ?></td>
-      </tr>
+      
       <tr>
         <td>Tanggal Daftar Ulang</td>
         <td><?php echo $d['tgl_daftar_ulang']; ?></td>

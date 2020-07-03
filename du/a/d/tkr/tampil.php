@@ -81,8 +81,11 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="tkr") {
         <table>
           <tr>
             <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-danger btn-md" href="index.php">Kembali</a></td>
-            <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-warning btn-md"
-              href="reset.php?nik=<?php echo $d['nik']; ?>" onclick="return confirm('Anda yakin Mereset data <?php echo $d['nama']; ?> ?')">Reset Data</a></td>
+            <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;"
+              class="btn btn-warning btn-md" href="reset.php?nik=<?php echo $d['nik']; ?>" onclick="return confirm('Anda yakin Mereset data <?php echo $d['nama']; ?> ?')">Reset
+                Data</a></td>
+            <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;"
+              class="btn btn-info btn-md" href="../../../tkr/cetak-daftar-ulang.php?nik=<?php echo $d['nik']; ?>">Cetak Bukti Daftar Ulang</a></td>
           </tr>
         </table>
 
@@ -201,18 +204,18 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="tkr") {
             </tr>
         </table>
         <center>
-        <select style="margin-top: 25px;  width: 30%; margin-bottom: 20px" class="form-control" name="kondisi" required>
-          <option value="<?php echo $d['kondisi']; ?>">Kondisi Awal(<?php echo $d['kondisi']; ?>)</option>
-          <option value="Data Sesuai">Data Sesuai</option>
-          <option value="Data Tidak Sesuai">Data Tidak Sesuai</option>
-        </select>
+          <select style="margin-top: 25px;  width: 30%; margin-bottom: 20px" class="form-control" name="kondisi" required>
+            <option value="<?php echo $d['kondisi']; ?>">Kondisi Awal(<?php echo $d['kondisi']; ?>)</option>
+            <option value="Data Sesuai">Data Sesuai</option>
+            <option value="Data Tidak Sesuai">Data Tidak Sesuai</option>
+          </select>
 
-        <input style="margin-bottom: 50px" type="submit" class="btn btn-success" name="" value="Submit">
+          <input style="margin-bottom: 50px" type="submit" class="btn btn-success" name="" value="Submit">
 
-        </form>
+          </form>
 
-        <br>
-        <?php
+          <br>
+          <?php
       } ?>
 
     </div>
