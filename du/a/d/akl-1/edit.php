@@ -87,93 +87,88 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
         <table class="table table-bordered">
           <form class="" action="update-edit.php" method="post">
 
-
-            <tr>
-              <td>Tanggal Pendaftaran</td>
-              <td><?php echo $d['tgl_daftar_ulang']; ?></td>
-            </tr>
             <tr>
               <td>Nama Siswa</td>
               <td>
-                <input type="text" name="nama" value="<?php echo $d['nama'] ?>" required>
+                <input class="form-control" type="text" name="nama" value="<?php echo $d['nama'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>Kompetensi Keahlian</td>
-              <td><?php echo $d['kompetensi_keahlian']; ?>
-                <input type="text" name="nama" value="<?php echo $d['nama'] ?>" readonly>
+              <td>
+                <input class="form-control" type="text" class="" name="kompetensi_keahlian" value="<?php echo $d['kompetensi_keahlian'] ?>" readonly>
               </td>
             </tr>
             <tr>
               <td>Asal Sekolah</td>
               <td>
-                <input type="text" name="asal_sekolah" value="<?php echo $d['asal_sekolah'] ?>" required>
+                <input class="form-control" type="text" name="asal_sekolah" value="<?php echo $d['asal_sekolah'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>NPSN Sekolah SMP</td>
               <td>
-                <input type="text" name="npsn_sekolah" value="<?php echo $d['npsn_sekolah'] ?>" required>
+                <input class="form-control" type="text" name="npsn_sekolah" value="<?php echo $d['npsn_sekolah'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>Alamat</td>
               <td>
-                <input type="text" name="alamat" value="<?php echo $d['alamat'] ?>" required>
+                <input class="form-control" type="text" name="alamat" value="<?php echo $d['alamat'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>RT</td>
               <td>
-                <input type="text" name="rt" value="<?php echo $d['rt'] ?>" required>
+                <input class="form-control" type="text" name="rt" value="<?php echo $d['rt'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>RW</td>
               <td>
-                <input type="text" name="rw" value="<?php echo $d['rw'] ?>" required>
+                <input class="form-control" type="text" name="rw" value="<?php echo $d['rw'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>Kelurahan</td>
               <td>
-                <input type="text" name="kelurahan" value="<?php echo $d['kelurahan'] ?>" required>
+                <input class="form-control" type="text" name="kelurahan" value="<?php echo $d['kelurahan'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>Kecamatan</td>
               <td>
-                <input type="text" name="kecamatan" value="<?php echo $d['kecamatan'] ?>" required>
+                <input class="form-control" type="text" name="kecamatan" value="<?php echo $d['kecamatan'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>Kota</td>
               <td>
-                <input type="text" name="kota" value="<?php echo $d['kota'] ?>" required>
+                <input class="form-control" type="text" name="kota" value="<?php echo $d['kota'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>NIK</td>
               <td>
-                <input type="text" name="nik" value="<?php echo $d['nik'] ?>" required>
+                <input class="form-control" type="text" name="nik" value="<?php echo $d['nik'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>Nomor HP</td>
               <td>
-                <input type="text" name="no_hp" value="<?php echo $d['no_hp'] ?>" required>
+                <input class="form-control" type="text" name="no_hp" value="<?php echo $d['no_hp'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>Nomor HP Siswa</td>
               <td>
-                <input type="text" name="no_hp" value="<?php echo $d['no_hp_siswa'] ?>" required>
+                <input class="form-control" type="text" name="no_hp" value="<?php echo $d['no_hp_siswa'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>Nomor HP Orang Tua</td>
               <td>
-                <input type="text" name="no_hp" value="<?php echo $d['no_hp_org_tua'] ?>" required>
+                <input class="form-control" type="text" name="no_hp" value="<?php echo $d['no_hp_org_tua'] ?>" required>
               </td>
             </tr>
             <tr>
