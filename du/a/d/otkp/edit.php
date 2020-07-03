@@ -162,13 +162,13 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="otkp") {
             <tr>
               <td>Nomor HP Siswa</td>
               <td>
-                <input class="form-control" type="text" name="no_hp" value="<?php echo $d['no_hp_siswa'] ?>" required>
+                <input class="form-control" type="text" name="no_hp_siswa" value="<?php echo $d['no_hp_siswa'] ?>" required>
               </td>
             </tr>
             <tr>
               <td>Nomor HP Orang Tua</td>
               <td>
-                <input class="form-control" type="text" name="no_hp" value="<?php echo $d['no_hp_org_tua'] ?>" required>
+                <input class="form-control" type="text" name="no_hp_org_tua" value="<?php echo $d['no_hp_org_tua'] ?>" required>
               </td>
             </tr>
             <tr>
