@@ -222,8 +222,9 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
             </tr>
         </table>
 
-
-        <input style="margin-bottom: 50px" type="submit" class="btn btn-success" name="" value="Submit">
+        <center>
+          <input style="margin-bottom: 50px" type="submit" class="btn btn-success" name="" value="Submit">
+        </center>
 
         </form>
 
