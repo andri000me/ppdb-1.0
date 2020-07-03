@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['status']!="siswa-otkp" && $_SESSION['status']!="admin") {
+if ($_SESSION['status']!="siswa-otkp" && $_SESSION['status']!="admin" && $_SESSION['status']!="otkp") {
     header("location:../../login/akl/index.php?pesan=belum_login");
 }
 ?>

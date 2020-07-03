@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['status']!="siswa-otkp" && $_SESSION['status']!="admin") {
+if ($_SESSION['status']!="siswa-otkp" && $_SESSION['status']!="admin" && $_SESSION['status']!="tkr") {
     header("location:../../login/akl/index.php?pesan=belum_login");
 }
 ?>
@@ -90,7 +90,7 @@ if ($_SESSION['status']!="siswa-otkp" && $_SESSION['status']!="admin") {
         <td>NPSN Sekolah Asal</td>
         <td><?php echo $d['npsn_sekolah']; ?></td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td>Kota/Kabupaten</td>
         <td><?php echo $d['kota']; ?></td>
       </tr>
@@ -117,7 +117,7 @@ if ($_SESSION['status']!="siswa-otkp" && $_SESSION['status']!="admin") {
       <tr>
         <td>RW</td>
         <td><?php echo $d['rw']; ?></td>
-      </tr>
+      </tr> -->
 
 
       <tr>
