@@ -18,7 +18,8 @@ if ($_SESSION['status']!="mesin") {
                pdf_photo='',
                pdf_surat_dokter='',
                pdf_skl='',
-               tgl_daftar_ulang=''
+               tgl_daftar_ulang='',
+               kondisi=''
                where nik='$nik'
                ") or die(mysqli_error($koneksi));
     ;
