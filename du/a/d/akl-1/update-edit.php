@@ -36,7 +36,7 @@ if ($_SESSION['status']!="akl") {
               nik='$nik',
               no_hp='$no_hp',
               no_hp_siswa='$no_hp_siswa',
-              no_hp_org_tua='$no_hp_org_tua',
+              no_hp_org_tua='$no_hp_org_tua'
                where nik='$nik'
                ");
 
