@@ -84,7 +84,7 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
             <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-warning btn-md"
               href="reset.php?nik=<?php echo $d['nik']; ?>" onclick="return confirm('Anda yakin Mereset data <?php echo $d['nama']; ?> ?')">Reset Data</a></td>
             <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md"
-              href="../../../akl/cetak-daftar-ulang.php">Cetak Bukti Daftar Ulang</a></td>
+              href="../../../akl/cetak-daftar-ulang.php?nik=<?php echo $d['nik']; ?>">Cetak Bukti Daftar Ulang</a></td>
           </tr>
         </table>
 
