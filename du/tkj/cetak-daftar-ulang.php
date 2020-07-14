@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_SESSION['status']!="siswa-tkj" && $_SESSION['status']!="admin" && $_SESSION['status']!="tkj") {
-    header("location:../../login/akl/index.php?pesan=belum_login");
+    header("location:index.php?pesan=belum_login");
 }
 ?>
 <!DOCTYPE html>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_SESSION['status']!="siswa-otkp" && $_SESSION['status']!="admin" && $_SESSION['status']!="rpl") {
-    header("location:../../login/akl/index.php?pesan=belum_login");
+    header("location:index.php?pesan=belum_login");
 }
 ?>
 <!DOCTYPE html>
@@ -65,7 +65,7 @@ if ($_SESSION['status']!="siswa-otkp" && $_SESSION['status']!="admin" && $_SESSI
           ?>
 
     <table class="table table-bordered">
-      
+
       <tr>
         <td>Tanggal Daftar Ulang</td>
         <td><?php echo $d['tgl_daftar_ulang']; ?></td>

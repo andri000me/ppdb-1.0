@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_SESSION['status']!="siswa-otkp" && $_SESSION['status']!="admin" && $_SESSION['status']!="tkr") {
-    header("location:../../login/akl/index.php?pesan=belum_login");
+    header("location:index.php?pesan=belum_login");
 }
 ?>
 <!DOCTYPE html>

@@ -87,6 +87,9 @@ if ($_SESSION['status']!="admin" && $_SESSION['status']!="akl") {
               href="edit.php?nik=<?php echo $d['nik']; ?>">Edit</a></td>
             <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md"
               href="../../../akl/cetak-daftar-ulang.php?nik=<?php echo $d['nik']; ?>">Cetak Bukti Daftar Ulang</a></td>
+            <td><a type="button" style="margin-right: 10px; margin-bottom: 25px;" class="btn btn-info btn-md"
+              href="../../../akl/cetak-form.php?nik=<?php echo $d['nik']; ?>">Cetak Bukti Pakta Integritas</a></td>
+
 
           </tr>
         </table>
